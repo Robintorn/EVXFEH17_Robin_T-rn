@@ -42,13 +42,17 @@ header nav li
    padding :45px;
    font-size: 1em;
 }
+header nav ul li a
+{
+ color:white;
+}
 /*
 En så kallad Psuedo-class selector. a menas då att den selectar alla länkar i HTML5-dokumentet.
 :link betyder att man bestämmer att alla länkar ska ha en viss style.
 */
 a:link
 {
-   color:white;
+   text-decoration: none;
 }
 /*
 a:hover bestämmer hur länkarna ska se ut om man håller med muspekaren på dom.
@@ -70,6 +74,7 @@ Detta är en Adjecent Sibling Selector. I detta fall bestämmer den att h3 komme
 {   
    background-color:slategrey;
    margin: 1em;
+   border-bottom: 3px solid darkblue;
 }
 
 .syndicate div p
@@ -77,6 +82,10 @@ Detta är en Adjecent Sibling Selector. I detta fall bestämmer den att h3 komme
    color: whitesmoke;
    padding: 0.5em;
    margin-bottom:0.5em;
+}
+.syndicate footer p
+{
+ color:whitesmoke;
 }
 
 .syndicate h3
@@ -92,7 +101,7 @@ Detta är en Adjecent Sibling Selector. I detta fall bestämmer den att h3 komme
 
 .blog_summary
 {
-   background-color: #EE8D73; 
+   background-color: salmon; 
    text-align: center;   
 }
 
