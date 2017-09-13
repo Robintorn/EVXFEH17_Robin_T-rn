@@ -83,7 +83,7 @@ h2 + h3
    padding: 0.5em;
 }
     
-.blog_summary p > span
+.blog_summary p span
 {
    color:yellow;
    text-align: center;
