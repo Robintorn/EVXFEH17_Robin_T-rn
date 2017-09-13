@@ -1,4 +1,7 @@
-*
+ /* 
+ Här har vi en Universal selector som sätter regler för alla element 
+ */
+ *
 {
     font-family: 'Merriweather';
     padding: 0;
@@ -8,13 +11,19 @@
     margin: 0;
 }
 
-body
+/*
+ Detta är en Type selector. Den används för att kunna styla ett element i HTML5. I detta fall body
+*/
+body  
 {
     background-color: #e9967a;
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
 }
+/*
+ Detta är en Descandant selector. I detta fallet riktar den in sig på att styla ul-elementet som finns inuti header och nav.
+*/
 header nav ul
 {
     background-color:#333;
@@ -23,7 +32,9 @@ header nav ul
     height: 2em;
     padding-top: 0.3em;
 }
-
+/*
+Samma sak här, en Descandant selector som selectar alla li-element som finns inuti en header och en nav.
+*/
 header nav li
 {
    display: inline;
@@ -31,24 +42,32 @@ header nav li
    padding :45px;
    font-size: 1em;
 }
-
+/*
+En så kallad Psuedo-class selector. a menas då att den selectar alla länkar i HTML5-dokumentet.
+:link betyder att man bestämmer att alla länkar ska ha en viss style.
+*/
 a:link
 {
    color:white;
 }
-
+/*
+a:hover bestämmer hur länkarna ska se ut om man håller med muspekaren på dom.
+*/
 header nav ul li a:hover
 {
    color:grey;
 }
-
-h2 + h3
+/*
+Detta är en Adjecent Sibling Selector. I detta fall bestämmer den att h3 kommer endast stylas om den har en
+ h2 precis innan.
+*/
+.logo h2 + h3
 {
    color:greenyellow;
 }
 
 .syndicate
-{
+{   
    background-color:slategrey;
    margin: 1em;
 }
