@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html>
+    <!-- 
+        Här i head taggen skapas inställningarna för sidan.
+        Dessa inställningar syns inte direkt på sidan.
+    -->
     <head>
+        <!--
+            Här länkar jag till min externa css fil som gör
+            så att jag ska kunna styla mina element. 
+        -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- 
+            Meta taggen innehåller helt enkelt information om 
+            informationen på hemsidan. I detta fall så använder
+            vi attributet charset med värdet UTF-8 för att kunna
+            hjälpa webbläsaren och läsa in rätt teckenuppsättning.
+        -->
         <meta charset="utf-8">
         <title>Inlämning 2</title>
+        <!-- 
+            
+        -->
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- 
+            Typsnittet Merriweather hämtas på detta sätt.
+        -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     </head>
+    <!-- 
+        Här i body taggen kommer allt det visuella skapas.
+    -->
     <body>
+        <!-- 
+            Jag har här valt och skapa en header med syftet 
+            att kunna beskriva vad som här huvuddelen på 
+            dokumentet. I detta element så innehåller det
+            en meny och en logo.
+        -->
         <header>
             <nav>
                 <ul>
@@ -23,7 +52,14 @@
                 <h3>ex2</h3>
                 <h4>ex3</h4>
             </div>
-        </header>
+        </header>  <!-- Här stängs header-taggen -->
+        <!--
+            Här skapade jag en sektion där alla mina artiklar
+            kommer befinna sig. Det menas då att allt innehåll 
+            i denna sektion grupperas. Anledningen till varför 
+            jag inte väljer att använda av mig <div> istället 
+            är för att den definerar inte att det är en sektion i HTML.
+        -->
         <section>
             <a href="#">
                 <article class="syndicate">
@@ -124,7 +160,7 @@
                         <span>30 out of 50</span>
                     </p>
                 </aside>
-        </section>
+        </section>  <!-- Här avslutas sektionen -->
         <div>
             <a href="#">Next article</a>
         </div>
