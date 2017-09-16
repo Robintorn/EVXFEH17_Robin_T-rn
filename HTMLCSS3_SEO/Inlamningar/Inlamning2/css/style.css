@@ -1,17 +1,23 @@
  /* 
-
+   Här använder jag mig av en Universal selector.
+   Som då gör så att alla regler som jag skriver 
+   här, kommer gälla för alla element på sidan.
  */
  *
 {
     font-family: 'Merriweather', sans-serif;
     padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
     margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 /*
-
+  Använder en type selector. Som då bara siktar
+  in sig på ett specifikt element. T.ex om jag
+  skriver h1{color:green;}, så kommer alla h1:or
+  som finns i dokumentet stylas. 
 */
 body  
 {
@@ -21,7 +27,10 @@ body
     width: 100%;
 }
 /*
-
+  Här har jag valt och sätta regler för ul. Genom
+  att skriva att jag kommer styla ett ul-element,
+  Som ligger inuti en header och en nav. Denna 
+  selektorn kallas en descendant selector.
 */
 header nav ul
 {
@@ -31,7 +40,9 @@ header nav ul
     text-align: center;
 }
 /*
-
+  Samma sak här, väljer att sätta regler för
+  dom list-item som ligger inuti en header
+  och en nav.
 */
 header nav li
 {
@@ -41,30 +52,50 @@ header nav li
 }
 header nav ul li a
 {
- color:white;
+   color:white;
 }
 /*
-
+  Psuedo selector som nu då detta i fallet
+  kommer sätta regler för dom länkar som 
+  inte har blivit besökta.
 */
 a:link
 {
-   text-decoration: none;
+   color: white;
+}
+/* 
+  Regler satta för dom länkar som blivit besökta.
+*/
+a:visited
+{
+   color: green;
 }
 /*
-
+  Denna :hover selectorn är då till för att styla 
+  länkar när du håller med muspekaren över dom.
 */
 header nav ul li a:hover
 {
-   color:grey;
+   color: grey;
 }
 /*
-
+  En Adjacent sibling selector som nu då väljer
+  att rikta in sig på en h3:a som har en h2:a 
+  precis innan samt att dom måste ha samma förälder.
+  I detta fall en <div>.
 */
 .logo h2 + h3
 {
    color:greenyellow;
 }
-
+/*
+  En class selector som i detta fallet kommer att
+  sätta regler för dom element som har angivits
+  med klassen "syndicate". Om det är klasser
+  man ska styla om så sätts det alltid en punkt
+  först för att anmärka att det är en klass.
+  Sedan därefter namnet man har givit elementet.
+*/
 .syndicate
 {   
    background-color:slategrey;
@@ -99,7 +130,11 @@ header nav ul li a:hover
 {
     color:red;
 }  
-
+/*
+  En child selector som talar om i detta fall
+  att man kommer styla dom/det span element som är
+  ett barn till en <p> tagg.
+*/
 .blog_summary p > span
 {
    color:yellow;
@@ -116,6 +151,11 @@ header nav ul li a:hover
     text-align: center;
     margin-top: 0.5em;
 }
+/*
+  En General sibling selector som kommer kunna
+  sätta regler för dessa element om dom har
+  samma förälder. Vilket dom har i detta fall.
+*/
 .tel ~ .web {
     color: white;
 }
