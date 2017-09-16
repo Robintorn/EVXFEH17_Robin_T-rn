@@ -1,5 +1,5 @@
  /* 
- Här har vi en Universal selector som sätter regler för alla element 
+
  */
  *
 {
@@ -11,7 +11,7 @@
 }
 
 /*
- Detta är en Type selector. Den används för att kunna styla ett element i HTML5. I detta fall body
+
 */
 body  
 {
@@ -21,7 +21,7 @@ body
     width: 100%;
 }
 /*
- Detta är en Descandant selector. I detta fallet riktar den in sig på att styla ul-elementet som finns inuti header och nav.
+
 */
 header nav ul
 {
@@ -31,7 +31,7 @@ header nav ul
     text-align: center;
 }
 /*
-Samma sak här, en Descandant selector som selectar alla li-element som finns inuti en header och en nav.
+
 */
 header nav li
 {
@@ -44,23 +44,21 @@ header nav ul li a
  color:white;
 }
 /*
-En så kallad Psuedo-class selector. a menas då att den selectar alla länkar i HTML5-dokumentet.
-:link betyder att man bestämmer att alla länkar ska ha en viss style.
+
 */
 a:link
 {
    text-decoration: none;
 }
 /*
-a:hover bestämmer hur länkarna ska se ut om man håller med muspekaren på dom. Att man hovrar.
+
 */
 header nav ul li a:hover
 {
    color:grey;
 }
 /*
-Detta är en Adjecent Sibling Selector. I detta fall bestämmer den att h3 kommer endast stylas om den har en
- h2 precis innan.
+
 */
 .logo h2 + h3
 {
