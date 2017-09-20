@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        Här i head taggen skapas inställningarna för sidan.
+        Dessa inställningar syns inte direkt på sidan.
+    -->
+    <head>
+        <!--
+            Här länkar jag till min externa css fil som gör
+            så att jag ska kunna styla mina element. 
+        -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- 
+            Meta taggen innehåller helt enkelt information om 
+            informationen på hemsidan. I detta fall så använder
+            vi attributet charset med värdet UTF-8 för att kunna
+            hjälpa webbläsaren och läsa in rätt teckenuppsättning.
+        -->
+        <meta charset="utf-8">
+        <title>Inlämning 2</title>
+        <!-- 
+            Den här meta taggen gör sidan mobilvänlig och skalbar
+            som är anpassad för mobilenheter.
+        -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- 
+            Typsnittet Merriweather hämtas på detta sätt.
+        -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    </head>
+    <!-- 
+        Här i body taggen kommer allt det visuella skapas.
+    -->
+    <body>
+        <!-- 
+            Jag har här valt och skapa en header med syftet 
+            att kunna beskriva vad som här huvuddelen på 
+            dokumentet. I detta element så innehåller det
+            en meny och en logo.
+        -->
+        <header>
+        <nav>
+					<ul>
+						<li><a href="#">Marvel</a>
+							<ul>
+								<li><a href="#">Most popular</a></li>
+								<li><a href="#">Heroes<span class="update">New!</span></a></li>
+								<li><a href="#">Villains<span class="update"><span>New!</span></a></li>
+								<li><a href="#">Comics</a>
+									<ul>
+										<li><a href="#">Earth<span class="span1">13</span></a></li>
+										<li><a href="#">Universe<span class="span1">13</span></a></li>
+										<li><a href="#">Earth<span class="span1">13</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#">Current</a></li>
+							</ul>
+						</li>
+						<li><a href="#">DC</a>
+							<ul>
+								<li><a href="#">Heroes<span class="span1">13</span></a></li>
+								<li><a href="#">Villains<span class="span1">13</span></a></li>
+								<li><a href="#">Linux<span class="span1">13</span></a></li>
+                                <li><a href="#">Ubuntu<span class="span1">13</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#">Projects</a>
+							<ul>
+								<li><a href="#">Android<span class="span1">13</span></a></li>
+								<li><a href="#">iOS<span class="span1">13</span></a></li>
+								<li><a href="#">Web<span class="span1">13</span></a></li>
+								<li><a href="#">Windows<span class="span1">13</span></a></li>
+							</ul>
+						</li>
+						<li id="about"><a href="#">About</a>
+					<ul>
+                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
+                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
+                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
+                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
+					</ul>
+						</li>
+				</nav>
+            <div class="logo">
+                <h1>Marvel Universe</h1>
+            </div>
+        </header>  <!-- Här stängs header-taggen -->
+    </body>
+</html>
