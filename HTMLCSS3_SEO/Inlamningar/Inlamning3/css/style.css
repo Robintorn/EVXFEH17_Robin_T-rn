@@ -1,39 +1,35 @@
+ /* 
+   Här använder jag mig av en Universal selector.
+   Som då gör så att alla regler som jag skriver 
+   här, kommer gälla för alla element på sidan.
+ */
  *{
-	padding:0;
-	margin:0;
-	box-sizing:border-box;
+    font-family: 'Merriweather', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
+/*
+  Använder en type selector. Som då bara siktar
+  in sig på ett specifikt element. T.ex om jag
+  skriver h1{color:green;}, så kommer alla h1:or
+  som finns i dokumentet stylas. 
+*/
 body{
-
-background-size: cover;
-max-width: 800px;
-width: 100%;
-margin: 0 auto;
-
+    background-color: #e9967a;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
 }
 
-/*Visas enbart på mobilen*/
-label{
-  color:red;
-  line-height: 40px;
-  font-size:2em;
-  cursor:pointer;
-}
-
-/*Dold chekcbox som aldrig visas*/
-#nav-toggle {
-  display: none;
-}
-
-/*Men som används för att dölja och visa menyn på mobilen*/
-#nav-toggle:checked + #wrapper nav {
-  display: block;
-}
-
-/*Menyn döljs på mobilen som default*/
 nav {
-  display: none;	
+	height:40px;
+	width:804px;/*beror på vilken bredd man satt på de enskilda li, i detta fall är de 4 li*200px+margin-right på 1px*/ 
+	display:block;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -44,7 +40,6 @@ nav a{
 	font-weight: bold;
 	font-size:10pt;
 	color:#112233;
-  
 }
 
 nav a:hover{
@@ -53,53 +48,16 @@ nav a:hover{
 }
 
 nav ul{
-	list-style: none;
   opacity:0.8;
-  
 }
 
-nav ul li{
-  background:skyblue;
-  line-height: 40px;
-  padding-left:50px;
-}
-
-/*Den första undermenyn färgläggs lite annorlunda på mobilen för att kunna skiljas från övre li*/
-nav ul li ul li a{
-  color:yellow;
-}
-
-/*Den andra undermenyn färgläggs lite annorlunda på mobilen för att kunna skiljas från övre li*/
-nav ul ul li ul a{
-  color:white;
-}
-
-@media all and (min-width: 630px){
-/*Tecknet för mobil menyn döljs på desktop*/
-  label{
-    display:none;
-  } 
-  
-  /*Menyn på desktoppen*/
-  nav {
-	height:40px;
-	width:804px;/*beror på vilken bredd man satt på de enskilda li, i detta fall är de 4 li*200px+margin-right på 1px*/ 
-	display:block;
-	margin:0 auto; /*centrar ul inuiti*/
-
-}
-  /*Alla ul li centreras på desktoppen*/
-  nav ul{
-    text-align:center;
-  }  
-
- /*Menyn på desktoppen*/
 nav ul li{
 	float:left;/*gör att den flyter till vänster (bättre att göra detta med flexbox)*/
 	width:200px;
 	height:40px;
+	line-height: 40px;
+	background:skyblue;
   margin-right:1px;
-  padding:0;
 }
 
 /*Döljer dropdown*/
@@ -114,7 +72,7 @@ nav ul ul ul{
   
 }
 
-/*Visar dropdown vid hover på ul li*/ 
+/*Visar dropdown vid hover på ul li*/
 nav ul li:hover ul li{
 	display: block;
   
@@ -129,35 +87,22 @@ nav ul ul li:hover ul{
 	top:0px; /*absolute position högst mot sin förälder*/
   
 }
-  /*Färgen för undermenyer på desktoppen återställs*/
-  nav ul li ul li a{
-  color:#112233;
-}
-  /*Färgen för undermenyer på desktoppen återställs*/
-  nav ul ul li ul a{
-  color:#112233;
-}
-}
 
-
-nav ul li:last-child, nav ul li:last-child > a:hover
-{
+nav ul li:last-child, nav ul li:last-child > :hover{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-#about, #about > a:hover
-{
+#sub, #sub > :hover{
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
-.span1
-{
+a > span{
   margin-left: 10px;
   border: 3px solid red;
-  background: red;
-  color:white;
+  background-color: red;
+  color: white;
   border-radius: 50%;
 }
 
@@ -167,11 +112,8 @@ nav ul li:last-child, nav ul li:last-child > a:hover
   precis innan samt att dom måste ha samma förälder.
   I detta fall en <div>.
 */
-.logo
-{
-   text-align: center;
-   padding: 30px;
-   margin: 5px;
+.logo h2 + h3{
+   color:greenyellow;
 }
 /*
   En class selector som i detta fallet kommer att
@@ -181,40 +123,36 @@ nav ul li:last-child, nav ul li:last-child > a:hover
   först för att anmärka att det är en klass.
   Sedan därefter namnet man har givit elementet.
 */
-.syndicate
-{   
-   background-color: green;
+.syndicate{   
+   background-color:slategrey;
    margin: 1em;
+   border-bottom: 3px solid darkblue;
 }
-.syndicate:nth-child(3n + 2)
-{
-   background: slateblue;
+
+.syndicate:nth-child(3n + 2){
+  background-color: slateblue;
 }
-.syndicate p
-{
+
+.syndicate p{
    color: whitesmoke;
    padding: 0.5em;
    margin-bottom: 0.5em
 }
-.syndicate h3
-{
+.syndicate h3{
    padding: 0.5em;
    text-align: center;
 }
-.blog_summary
-{
+.blog_summary{
    background-color: salmon; 
    text-align: center;   
 }
 
-.blog_summary ul li
-{
+.blog_summary ul li{
    margin: 0.5em;
    padding: 0.5em;
 }
 
-.blog_summary ul li a:hover 
-{
+.blog_summary ul li a:hover{
     color:red;
 }  
 /*
@@ -222,24 +160,24 @@ nav ul li:last-child, nav ul li:last-child > a:hover
   att man kommer styla dom/det span element som är
   ett barn till en <p> tagg.
 */
-.blog_summary p > span
-{
+.blog_summary p > span{
    color:yellow;
    text-align: center;
 }
 
-.blog_summary ul
-{
+.blog_summary ul{
     text-align: center;
 }
 
-.contact 
-{
+.contact{
     text-align: center;
     margin-top: 0.5em;
 }
-
-.tel ~ .web 
-{
+/*
+  En General sibling selector som kommer kunna
+  sätta regler för dessa element om dom har
+  samma förälder. Vilket dom har i detta fall.
+*/
+.tel ~ .web{
     color: white;
 }

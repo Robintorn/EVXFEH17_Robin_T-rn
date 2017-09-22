@@ -1,61 +1,107 @@
 <!DOCTYPE html>
 <html>
+    <!-- 
+        Här i head taggen skapas inställningarna för sidan.
+        Dessa inställningar syns inte direkt på sidan.
+    -->
     <head>
+        <!--
+            Här länkar jag till min externa css fil som gör
+            så att jag ska kunna styla mina element. 
+        -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- 
+            Meta taggen innehåller helt enkelt information om 
+            informationen på hemsidan. I detta fall så använder
+            vi attributet charset med värdet UTF-8 för att kunna
+            hjälpa webbläsaren och läsa in rätt teckenuppsättning.
+        -->
         <meta charset="utf-8">
-        <title>Inlämning 2</title>
+        <title>Inlämning 3</title>
+        <!-- 
+            Den här meta taggen gör sidan mobilvänlig och skalbar
+            som är anpassad för mobilenheter.
+        -->
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- 
+            Typsnittet Merriweather hämtas på detta sätt.
+        -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     </head>
+    <!-- 
+        Här i body taggen kommer allt det visuella skapas.
+    -->
     <body>
+        <!-- 
+            Jag har här valt och skapa en header med syftet 
+            att kunna beskriva vad som här huvuddelen på 
+            dokumentet. I detta element så innehåller det
+            en meny och en logo.
+        -->
         <header>
-           <input type="checkbox" id="nav-toggle">
-  
-<div id="wrapper">
-	
-		<label for="nav-toggle">&#9776 SAAB</label>
-<nav>
-					<ul>
-						<li><a href="#">Programming</a>
-							<ul>
-								<li><a href="#">C++</a></li>
-								<li><a href="#">C#</a></li>
-								<li><a href="#">Java</a></li>
-								<li><a href="#">Web Dev</a>
-									<ul>
-										<li><a href="#">Javascript</a></li>
-										<li><a href="#">PHP</a></li>
-										<li><a href="#">Ruby</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Python</a></li>
-							</ul>
-						</li>
-						<li><a href="#">OS</a>
-							<ul>
-								<li><a href="#">Windows</a></li>
-								<li><a href="#">Macintosh</a></li>
-								<li><a href="#">Linux</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Projects</a>
-							<ul>
-								<li><a href="#">Android</a></li>
-								<li><a href="#">iOS</a></li>
-								<li><a href="#">Web</a></li>
-								<li><a href="#">Windows</a></li>
-							</ul>
-						</li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-				</nav>
-  </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Guitars</a>
+                    <ul>
+                        <li><a href="#">Les Paul<span>New</span></a></li>
+                        <li><a href="#">Ibanez<span>New</span></a></li>
+                        <li><a href="#">Epiphone<span>New</span></a>
+                        <ul>
+                            <li><a href="#">SG</a></li>
+                            <li><a href="#">Latest</a></li>
+                            <li><a href="#">Modern</a></li>
+                            <li><a href="#">Best seller</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Bach</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Drums</a>
+                    <ul>
+                        <li><a href="#">Yamaha<span>New</span></a></li>
+                        <li><a href="#">Ludwig<span>New</span></a></li>
+                        <li><a href="#">Tama<span>New</span></a></li>
+                        <li><a href="#">Pearl<span>New</span></a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Bass</a>
+                    <ul>
+                        <li><a href="#">Ibanez<span>New</span></a></li>
+                        <li><a href="#">Yamaha<span>New</span></a></li>
+                        <li><a href="#">Epiphone<span>New</span></a></li>
+                        <li><a href="#">Bach<span>New</span></a></li>
+                    </ul>
+                    </li>
+                    <li id="sub"><a href="#">Piano</a>
+                    <ul>
+                        <li><a href="#">Yamaha<span>New</span></a></li>
+                        <li><a href="#">Steinberg<span>New</span></a></li>
+                        <li><a href="#">Futura<span>New</span></a></li>
+                        <li><a href="#">William<span>New</span></a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="logo">
-                <h1>Robin Törn the king</h1>
+                <h2>ex1</h2>
+                <h3>ex2</h3>
+                <h4>ex3</h4>
             </div>
-        </header>  
+        </header>  <!-- Här stängs header-taggen -->
+        <!--
+            Här skapade jag en sektion där alla mina artiklar
+            kommer befinna sig. Det menas då att allt innehåll 
+            i denna sektion grupperas. Anledningen till varför 
+            jag inte väljer att använda mig av <div> istället 
+            är för att den definerar inte att det är en sektion i HTML.
+        -->
         <section>
-                <article class="syndicate"> 
+                <!-- 
+                    Tilldelat alla artiklar med klassen syndicate
+                    för att dom ska ha samma regler angående stylingen. 
+                -->
+                <article class="syndicate">
+                    <a href="#"> 
                     <header>
                         <h3>Blog article 1</h3>
                     </header>
@@ -69,91 +115,8 @@
                     <footer>
                         <p>date:1 Jun</p>
                     </footer>
+                     </a>
                 </article>
-            
-        
-                <article class="syndicate">
-                    <header>
-                        <h3>Blog article 2</h3>
-                    </header>
-                        <div>
-                            <p>
-                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
-                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
-                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
-                            </p>
-                        </div>
-                    <footer>
-                        <p>date:2 Jun</p>
-                    </footer>
-                </article>
-            
-            
-                <article class="syndicate">
-                    <header>
-                        <h3>Blog article 3</h3>
-                    </header>
-                        <div>
-                            <p>
-                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
-                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
-                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
-                            </p>
-                        </div>
-                    <footer>
-                        <p>date:3 Jun</p>
-                    </footer>
-                </article>
-                
-                <article class="syndicate">
-                    <header>
-                        <h3>Blog article 4</h3>
-                    </header>
-                        <div>
-                            <p>
-                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
-                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
-                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
-                            </p>
-                        </div>
-                    <footer>
-                        <p>date:4 Jun</p>
-                    </footer>
-                </article>
-            
-           
-                <article class="syndicate">
-                    <header>
-                        <h3>Blog article 5</h3>
-                    </header>
-                        <div>
-                            <p>
-                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
-                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
-                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
-                            </p>
-                        </div>
-                    <footer>
-                        <p>date:5 Jun</p>
-                    </footer>
-                </article>
-                
-                <article class="syndicate">
-                    <header>
-                        <h3>Blog article 2</h3>
-                    </header>
-                        <div>
-                            <p>
-                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
-                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
-                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
-                            </p>
-                        </div>
-                    <footer>
-                        <p>date:2 Jun</p>
-                    </footer>
-                </article>
-                
                 <article class="syndicate">
                     <a href="#">
                     <header>
@@ -171,10 +134,10 @@
                     </footer>
                     </a>
                 </article>
-                
                 <article class="syndicate">
+                    <a href="#">
                     <header>
-                        <h3>Blog article 2</h3>
+                        <h3>Blog article 3</h3>
                     </header>
                         <div>
                             <p>
@@ -184,13 +147,14 @@
                             </p>
                         </div>
                     <footer>
-                        <p>date:2 Jun</p>
+                        <p>date:3 Jun</p>
                     </footer>
+                    </a>
                 </article>
-                
                 <article class="syndicate">
+                    <a href="#">
                     <header>
-                        <h3>Blog article 2</h3>
+                        <h3>Blog article 4</h3>
                     </header>
                         <div>
                             <p>
@@ -200,13 +164,14 @@
                             </p>
                         </div>
                     <footer>
-                        <p>date:2 Jun</p>
+                        <p>date:4 Jun</p>
                     </footer>
+                    </a>
                 </article>
-                
                 <article class="syndicate">
+                    <a href="#">
                     <header>
-                        <h3>Blog article 2</h3>
+                        <h3>Blog article 5</h3>
                     </header>
                         <div>
                             <p>
@@ -216,9 +181,65 @@
                             </p>
                         </div>
                     <footer>
-                        <p>date:2 Jun</p>
+                        <p>date:5 Jun</p>
                     </footer>
+                    </a> 
                 </article>
+                 <article class="syndicate">
+                    <a href="#">
+                    <header>
+                        <h3>Blog article 6</h3>
+                    </header>
+                        <div>
+                            <p>
+                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                            </p>
+                        </div>
+                    <footer>
+                        <p>date:6 Jun</p>
+                    </footer>
+                    </a> 
+                </article>       
+                 <article class="syndicate">
+                    <a href="#">
+                    <header>
+                        <h3>Blog article 7</h3>
+                    </header>
+                        <div>
+                            <p>
+                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                            </p>
+                        </div>
+                    <footer>
+                        <p>date:7 Jun</p>
+                    </footer>
+                    </a> 
+                </article>       
+                 <article class="syndicate">
+                    <a href="#">
+                    <header>
+                        <h3>Blog article 8</h3>
+                    </header>
+                        <div>
+                            <p>
+                                Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                               meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                               Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                            </p>
+                        </div>
+                    <footer>
+                        <p>date:8 Jun</p>
+                    </footer>
+                    </a> 
+                </article>                
+                <!-- 
+                    En aside tag som representeras som ett sidofält
+                    på hemsidan. Tilldelats med klassen .blog_summary
+                -->
                 <aside class="blog_summary">
                     <ul>
                         <li><a href="#">blog artikel 1</a></li>
@@ -233,15 +254,20 @@
                         <span>30 out of 50</span>
                     </p>
                 </aside>
-        </section>  
+        </section>  <!-- Slutet på section -->
         <div>
             <a href="#">Next article</a>
         </div>
+        <!-- 
+            En footer tag som definerar den nedersta
+            delen på dokumentet.
+        -->
         <footer class="contact">
             <p>
                 <span class="tel">Tel:0708349299 &#x0007C;</span>
                 <span class="web">&#x000A0;email:kungen@gmail.se &#x0007C;&#x000A0;</span>
                 <span class="web">web:smalandsgymnasiet.se</span>
             </p>
-        </footer>
+        </footer>  <!-- Slutet på footer -->
+    </body>
 </html>

@@ -1,130 +1,96 @@
- /* 
-   Här använder jag mig av en Universal selector.
-   Som då gör så att alla regler som jag skriver 
-   här, kommer gälla för alla element på sidan.
- */
- *
-{
-    font-family: 'Merriweather', sans-serif;
-    padding: 0;
+*{
+    font-family: merriweather;
     margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+    padding: 0;
     list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-/*
-  Använder en type selector. Som då bara siktar
-  in sig på ett specifikt element. T.ex om jag
-  skriver h1{color:green;}, så kommer alla h1:or
-  som finns i dokumentet stylas. 
-*/
-body  
-{
-    background-color: #1684A7;
-    margin: 0 auto;
+body{
+    background-color: gold;
     max-width: 800px;
-    width: 100%; 
+    width: 100%;
+    margin: 0 auto;
 }
 
-nav
-{
-   height: 40px;
-   width: 804px;
-   display: block;
-   margin: 0 auto;
-   text-align: center;
-   text-transform: uppercase;
+nav ul{
+    background-color: grey;
+    text-align: center;
+    padding-top: 0.3em;
+    height: 2em;
 }
 
-nav a
-{
-  display: block;
-  font-family: merriweather;
-  font-weight: bold;
-  font-size: 10pt;
-  color: #112233;
+nav ul li{
+    display: inline;
+    padding: 3em;
+    
 }
 
-nav a:hover
-{
-  background:#223433;
-  color:#f0f1f5; 
-}
-
-nav ul
-{
-  opacity: 0.8;
-}
-
-nav ul li
-{
-  float:left;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  background: #B1D056;
-  margin-right: 1px;
-}
-
-nav ul ul li
-{
-  position: relative;
-  display: none;
-}
-
-nav ul li:last-of-type, nav li li:last-of-type
-{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.update
-{
-    margin-left: 10px;
-    border: 3px solid red;
-    background-color: red;
-    border-radius: 50%;
+nav ul li a{
     color:white;
 }
 
-.span1
-{
-  margin-left: 10px;
-  border: 3px solid red;
-  background: red;
-  color:white;
-  border-radius: 50%;
+a:link{
+    color:white;
 }
 
-nav ul ul ul
-{
-  display: none;
+a:hover{
+    color:greenyellow;
 }
 
-nav ul li:hover ul li
-{
-  display: block;
+a:visited{
+    color: green;
 }
 
-nav ul ul li:hover ul
-{
-  display: block;
-  position: absolute;
-  width: 200px;
-  bottom: -39px;
-  left: 200px;
+#logo{
+    margin-right: 2em;
+    margin-top: 0.5em;
 }
 
-/*
-  En Adjacent sibling selector som nu då väljer
-  att rikta in sig på en h3:a som har en h2:a 
-  precis innan samt att dom måste ha samma förälder.
-  I detta fall en <div>.
-*/
-.logo
-{
-   text-align: center;
-   padding: 30px;
-   margin: 5px;
+h2 + h3{
+    color: grey;
+}
+
+.syndicate{
+    background-color:black;
+    margin: 1em;
+    border-bottom: 3px solid darkblue;
+}
+
+.syndicate h2{
+    text-align: center;
+    padding: 0.5em;
+}
+
+.syndicate p{
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+.blog_summary{
+    text-align: center;
+    background-color: pink;
+}
+
+.blog_summary ul li{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.blog_summary ul li a:hover{
+    color:red;
+}
+
+.blog_summary p > span{
+    color: red;
+}
+
+.footer p{
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.tel ~ .web {
+    color: white;
 }

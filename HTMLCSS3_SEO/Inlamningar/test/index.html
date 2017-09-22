@@ -1,89 +1,160 @@
 <!DOCTYPE html>
 <html>
-    <!-- 
-        Här i head taggen skapas inställningarna för sidan.
-        Dessa inställningar syns inte direkt på sidan.
-    -->
     <head>
-        <!--
-            Här länkar jag till min externa css fil som gör
-            så att jag ska kunna styla mina element. 
-        -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- 
-            Meta taggen innehåller helt enkelt information om 
-            informationen på hemsidan. I detta fall så använder
-            vi attributet charset med värdet UTF-8 för att kunna
-            hjälpa webbläsaren och läsa in rätt teckenuppsättning.
-        -->
         <meta charset="utf-8">
-        <title>Inlämning 2</title>
-        <!-- 
-            Den här meta taggen gör sidan mobilvänlig och skalbar
-            som är anpassad för mobilenheter.
-        -->
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <!-- 
-            Typsnittet Merriweather hämtas på detta sätt.
-        -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Fårse</title>
     </head>
-    <!-- 
-        Här i body taggen kommer allt det visuella skapas.
-    -->
     <body>
-        <!-- 
-            Jag har här valt och skapa en header med syftet 
-            att kunna beskriva vad som här huvuddelen på 
-            dokumentet. I detta element så innehåller det
-            en meny och en logo.
-        -->
         <header>
-        <nav>
-					<ul>
-						<li><a href="#">Marvel</a>
-							<ul>
-								<li><a href="#">Most popular</a></li>
-								<li><a href="#">Heroes<span class="update">New!</span></a></li>
-								<li><a href="#">Villains<span class="update"><span>New!</span></a></li>
-								<li><a href="#">Comics</a>
-									<ul>
-										<li><a href="#">Earth<span class="span1">13</span></a></li>
-										<li><a href="#">Universe<span class="span1">13</span></a></li>
-										<li><a href="#">Earth<span class="span1">13</span></a></li>
-									</ul>
-								</li>
-								<li><a href="#">Current</a></li>
-							</ul>
-						</li>
-						<li><a href="#">DC</a>
-							<ul>
-								<li><a href="#">Heroes<span class="span1">13</span></a></li>
-								<li><a href="#">Villains<span class="span1">13</span></a></li>
-								<li><a href="#">Linux<span class="span1">13</span></a></li>
-                                <li><a href="#">Ubuntu<span class="span1">13</span></a></li>
-							</ul>
-						</li>
-						<li><a href="#">Projects</a>
-							<ul>
-								<li><a href="#">Android<span class="span1">13</span></a></li>
-								<li><a href="#">iOS<span class="span1">13</span></a></li>
-								<li><a href="#">Web<span class="span1">13</span></a></li>
-								<li><a href="#">Windows<span class="span1">13</span></a></li>
-							</ul>
-						</li>
-						<li id="about"><a href="#">About</a>
-					<ul>
-                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
-                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
-                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
-                        <li><a href="#">Tjena<span class="span1">13</span></a></li>
-					</ul>
-						</li>
-				</nav>
-            <div class="logo">
-                <h1>Marvel Universe</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Meny 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Meny 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Meny 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Meny 4</a>
+                    </li>
+                    <li>
+                        <a href="#">Meny 5</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="logo">
+                <h2>ex1</h2>
+                <h3>ex2</h3>
+                <h4>ex3</h4>
             </div>
-        </header>  <!-- Här stängs header-taggen -->
+        </header>
+        <section>
+            <article class="syndicate">
+                <a href="#">
+                <header>
+                    <h2>Lorem ipsum</h2>
+                </header>
+                <div>
+                    <p>
+                         Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                         meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                         Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                    </p>
+                </div>
+                <footer>
+                    <p>Date:14june</p>
+                </footer>
+                </a>
+            </article>
+            <article class="syndicate">
+                <a href="#">
+                <header>
+                    <h2>Lorem ipsum</h2>
+                </header>
+                <div>
+                    <p>
+                         Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                         meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                         Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                    </p>
+                </div>
+                <footer>
+                    <p>Date:14june</p>
+                </footer>
+                </a>
+            </article>
+            <article class="syndicate">
+                <a href="#">
+                <header>
+                    <h2>Lorem ipsum</h2>
+                </header>
+                <div>
+                    <p>
+                        Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                        meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                        Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                    </p>
+                </div>
+                <footer>
+                    <p>Date:14june</p>
+                </footer>
+                </a>
+            </article>
+            <article class="syndicate">
+                <a href="#">
+                <header>
+                    <h2>Lorem ipsum</h2>
+                </header>
+                <div>
+                    <p>
+                         Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                         meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                         Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                    </p>
+                </div>
+                <footer>
+                    <p>Date:14june</p>
+                </footer>
+                </a>
+            </article>
+            <article class="syndicate">
+                <a href="#">
+                <header>
+                    <h2>Lorem ipsum</h2>
+                </header>
+                <div>
+                    <p>
+                         Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                         meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                         Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                    </p>
+                </div>
+                <footer>
+                    <p>Date:14june</p>
+                </footer>
+                </a>
+            </article>
+            <article class="syndicate">
+                <a href="#">
+                <header>
+                    <h2>Lorem ipsum</h2>
+                </header>
+                <div>
+                    <p>
+                         Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal 
+                         meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. 
+                         Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformati
+                    </p>
+                </div>
+                <footer>
+                    <p>Date:14june</p>
+                </footer>
+                </a>
+            </article>
+            <aside class="blog_summary">
+                <ul>
+                    <li><a href="#">Blog artikel 1</a></li>
+                    <li><a href="#">Blog artikel 1</a></li>
+                    <li><a href="#">Blog artikel 1</a></li>
+                    <li><a href="#">Blog artikel 1</a></li>
+                    <li><a href="#">Blog artikel 1</a></li>
+                </ul>
+                <p>
+                    <span>Article count 30 out of 50</span>
+                </p>
+            </aside>
+            <div>
+                <a href="#">Next article</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <p><span class="tel">Tel:0708394875 </span><span class="web">Email:kungen@hotmail.se </span><span class="web">web:smalandsgymnasiet.com</span></p>
+        </footer>
     </body>
 </html>

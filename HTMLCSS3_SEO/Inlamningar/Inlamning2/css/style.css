@@ -1,4 +1,4 @@
- /* 
+/* 
    Här använder jag mig av en Universal selector.
    Som då gör så att alla regler som jag skriver 
    här, kommer gälla för alla element på sidan.
@@ -24,105 +24,60 @@ body
     background-color: #e9967a;
     margin: 0 auto;
     max-width: 800px;
-    width: 100%; 
+    width: 100%;
 }
-
-nav
+/*
+  Här har jag valt och sätta regler för ul. Genom
+  att skriva att jag kommer styla ett ul-element,
+  Som ligger inuti en header och en nav. Denna 
+  selektorn kallas en descendant selector.
+*/
+header nav ul
 {
-   height: 40px;
-   width: 804px;
-   display: block;
-   margin: 0 auto;
-   text-align: center;
-   text-transform: uppercase;
+    background-color:#333;
+    height: 2em;
+    padding-top: 0.3em;
+    text-align: center;
 }
-
-nav a
+/*
+  Samma sak här, väljer att sätta regler för
+  dom list-item som ligger inuti en header
+  och en nav.
+*/
+header nav li
 {
-  display: block;
-  font-family: merriweather;
-  font-weight: bold;
-  font-size: 10pt;
-  color: #112233;
+   display: inline;
+   padding :3em;
+   font-size: 1em;
 }
-
-nav a:hover
+header nav ul li a
 {
-  background:#223433;
-  color:#f0f1f5; 
+   color:white;
 }
-
-nav ul
+/*
+  Psuedo selector som nu då detta i fallet
+  kommer sätta regler för dom länkar som 
+  inte har blivit besökta.
+*/
+a:link
 {
-  opacity: 0.8;
+   color: white;
 }
-
-nav ul li
+/* 
+  Regler satta för dom länkar som blivit besökta.
+*/
+a:visited
 {
-  float:left;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  background: skyblue;
-  margin-right: 1px;
+   color: green;
 }
-
-nav ul ul li
+/*
+  Denna :hover selectorn är då till för att styla 
+  länkar när du håller med muspekaren över dom.
+*/
+header nav ul li a:hover
 {
-  position: relative;
-  display: none;
+   color: grey;
 }
-
-nav ul li:last-child
-{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; 
-}
-nav ul li:last-child > a:hover
-{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; 
-}
-
-nav ul #about
-{
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; 
-}
-nav ul #about > a:hover
-{
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; 
-}
-
-span
-{
-  margin-left: 10px;
-  border: 3px solid red;
-  background: red;
-  color:white;
-  border-radius: 50%;
-}
-
-nav ul ul ul
-{
-  display: none;
-}
-
-nav ul li:hover ul li
-{
-  display: block;
-}
-
-nav ul ul li:hover ul
-{
-  display: block;
-  position: absolute;
-  width: 200px;
-  left: 200px;
-  top: 0px;
-}
-
 /*
   En Adjacent sibling selector som nu då väljer
   att rikta in sig på en h3:a som har en h2:a 
@@ -147,10 +102,7 @@ nav ul ul li:hover ul
    margin: 1em;
    border-bottom: 3px solid darkblue;
 }
-.syndicate:nth-child(3n + 2)
-{
-   background: slateblue;
-}
+
 .syndicate p
 {
    color: whitesmoke;
@@ -204,7 +156,6 @@ nav ul ul li:hover ul
   sätta regler för dessa element om dom har
   samma förälder. Vilket dom har i detta fall.
 */
-.tel ~ .web 
-{
+.tel ~ .web {
     color: white;
 }
