@@ -27,7 +27,7 @@ body{
 
 nav {
 	height:40px;
-	width:804px;/*beror på vilken bredd man satt på de enskilda li, i detta fall är de 4 li*200px+margin-right på 1px*/ 
+	width:804px;
 	display:block;
 	text-align: center;
 	text-transform: uppercase;
@@ -52,7 +52,7 @@ nav ul{
 }
 
 nav ul li{
-	float:left;/*gör att den flyter till vänster (bättre att göra detta med flexbox)*/
+	float:left;
 	width:200px;
 	height:40px;
 	line-height: 40px;
@@ -60,31 +60,28 @@ nav ul li{
   margin-right:1px;
 }
 
-/*Döljer dropdown*/
 nav ul ul li{
-	position:relative; /* sätter positionen till vara relativt till sin behållare*/
+	position:relative;
 	display:none;
 }
 
-/*Döljer submenyn i dropdown*/
 nav ul ul ul{
 	display:none;
   
 }
 
-/*Visar dropdown vid hover på ul li*/
 nav ul li:hover ul li{
 	display: block;
   
 }
 
-/*Visar submenyn i dropdown*/
+
 nav ul ul li:hover ul{
 	display:block;
-	position:absolute; /*sätter positionen till att absolute mot sin förälder som är satt till att vara relativt*/
-	width:200px; /*samma som ul li*/
-	left:200px; /*absolute position 200px ifrån sin förälder*/
-	top:0px; /*absolute position högst mot sin förälder*/
+	position:absolute; 
+	width:200px; 
+	left:200px;
+	top:0px; 
   
 }
 
