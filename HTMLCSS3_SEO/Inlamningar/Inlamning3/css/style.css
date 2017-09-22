@@ -19,88 +19,138 @@
   som finns i dokumentet stylas. 
 */
 body{
-    background-color: #e9967a;
+    background-color: black;
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
 }
 
-nav {
-	height:40px;
-	width:804px;
-	display:block;
-	text-align: center;
-	text-transform: uppercase;
+label{
+  color:red;
+  line-height: 40px;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/*Döljer checkboxen*/
+#nav-toggle{
+  display: none;
+}
+
+/*
+  Den Kommer däremot användas för att kunna dölja och
+  visa menyn. 
+*/
+#nav-toggle:checked + #wrapper nav{
+  display: block;
+}
+
+nav{
+  display: none;
+  text-transform: uppercase;
 }
 
 nav a{
-	display:block;
-	text-decoration: none;
-	font-family: merriweather;
-	font-weight: bold;
-	font-size:10pt;
-	color:#112233;
+  display: block;
+  font-weight: bold;
+  font-size: 10pt;
+  color:#112233;
 }
 
 nav a:hover{
-	background:#223433;
-	color:#f0f1f5;
+  background: #223433;
+  color: #f0f1f5;
 }
 
 nav ul{
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 nav ul li{
-	float:left;
-	width:200px;
-	height:40px;
-	line-height: 40px;
-	background:skyblue;
-  margin-right:1px;
+  background: skyblue;
+  line-height: 40px;
+  padding-left: 40px;
 }
 
-nav ul ul li{
-	position:relative;
-	display:none;
+nav ul li ul li a{
+  color:yellow;
 }
 
-nav ul ul ul{
-	display:none;
+nav ul ul li ul a{
+  color:white;
+}
+
+@media all and (min-width: 630px){
+
+  label{
+    display: none;
+  }
   
-}
+  nav{
+    height: 40px;
+    width: 804px;
+    display: block;
+    margin: 0 auto;
+  }
 
-nav ul li:hover ul li{
-	display: block;
-  
-}
+  nav ul{
+    text-align: center;
+  }
 
+  nav ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-right: 1px;
+    padding: 0;
+  }
 
-nav ul ul li:hover ul{
-	display:block;
-	position:absolute; 
-	width:200px; 
-	left:200px;
-	top:0px; 
-  
-}
+  nav ul ul li{
+    display:none;
+    position: relative;
+  }
 
-nav ul li:last-child, nav ul li:last-child > :hover{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
+  nav ul ul ul{
+    display: none;
+  }
 
-#sub, #sub > :hover{
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
+  nav ul li:hover ul li{
+    display: block;
+  }
 
-a > span{
-  margin-left: 10px;
-  border: 3px solid red;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
+  nav ul ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 200px;
+    left: 200px;
+    top: 0px;
+  }
+
+  nav ul li ul li a{
+    color:black;
+  }
+
+  nav ul li ul li ul li a{
+    color:black;
+  }
+
+  nav ul li:last-child, nav ul li:last-child > a:hover{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  #sub, #sub > a:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  a > span{
+    border: 4px solid red;
+    margin-left: 10px;
+    background: red;
+    border-radius: 50%;
+    color:white;
+  }
 }
 
 /*
@@ -109,8 +159,11 @@ a > span{
   precis innan samt att dom måste ha samma förälder.
   I detta fall en <div>.
 */
-.logo h2 + h3{
-   color:greenyellow;
+.logo h1{
+  text-align: center;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 /*
   En class selector som i detta fallet kommer att
@@ -140,7 +193,7 @@ a > span{
    text-align: center;
 }
 .blog_summary{
-   background-color: salmon; 
+   background-color: slateblue; 
    text-align: center;   
 }
 
@@ -158,7 +211,7 @@ a > span{
   ett barn till en <p> tagg.
 */
 .blog_summary p > span{
-   color:yellow;
+   color: black;
    text-align: center;
 }
 
@@ -169,12 +222,5 @@ a > span{
 .contact{
     text-align: center;
     margin-top: 0.5em;
-}
-/*
-  En General sibling selector som kommer kunna
-  sätta regler för dessa element om dom har
-  samma förälder. Vilket dom har i detta fall.
-*/
-.tel ~ .web{
     color: white;
 }
