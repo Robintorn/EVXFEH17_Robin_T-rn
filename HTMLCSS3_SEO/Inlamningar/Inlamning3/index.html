@@ -36,22 +36,42 @@
             Jag har här valt och skapa en header med syftet 
             att kunna beskriva vad som här huvuddelen på 
             dokumentet. I detta element så innehåller det
-            en meny och en logo.
+            menyer och en logo.
         -->
         <header>
+         <!-- 
+             Knappen för menyn
+         -->
          <input type="checkbox" id="nav-toggle">
-         
+           <!-- 
+               Har skapat en div som delar in hela naven i en kartong
+               kan man säga.
+           -->
           <div id="wrapper">
-              
+            <!-- 
+                Texten för menyn
+            --> 
            <label for="nav-toggle">&#9776 Ferrari</label>
+            <!-- 
+                Nav
+            -->
             <nav>
                 <ul>
+                    <!-- 
+                        Huvudmeny
+                    -->
                     <li><a href="#">Guitars</a>
                     <ul>
+                        <!-- 
+                            Undermenyer
+                        -->
                         <li><a href="#">Les Paul</a></li>
                         <li><a href="#">Ibanez</a></li>
                         <li><a href="#">Epiphone<span>New</span></a>
                         <ul>
+                            <!-- 
+                                Underundermenyer
+                            -->
                             <li><a href="#">SG</a></li>
                             <li><a href="#">Latest</a></li>
                             <li><a href="#">Modern</a></li>
@@ -77,6 +97,9 @@
                         <li><a href="#">Bach</a></li>
                     </ul>
                     </li>
+                    <!-- 
+                        Angivit id för speciell deklaration
+                    -->
                     <li id="sub"><a href="#">Piano</a>
                     <ul>
                         <li><a href="#">Yamaha</a></li>
