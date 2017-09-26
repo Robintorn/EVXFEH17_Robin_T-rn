@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        Här i head taggen skapas inställningarna för sidan.
+        Dessa inställningar syns inte direkt på sidan.
+    -->
+    <head>
+        <!--
+            Här länkar jag till min externa css fil som gör
+            så att jag ska kunna styla mina element. 
+        -->
+        <link rel="stylesheet" href="css/inlamning4a.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- 
+            Meta taggen innehåller helt enkelt information om 
+            informationen på hemsidan. I detta fall så använder
+            vi attributet charset med värdet UTF-8 för att kunna
+            hjälpa webbläsaren och läsa in rätt teckenuppsättning.
+        -->
+        <meta charset="utf-8">
+        <title>Inlämning 3</title>
+        <!-- 
+            Den här meta taggen gör sidan mobilvänlig och skalbar
+            som är anpassad för mobilenheter.
+        -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- 
+            Typsnittet Merriweather hämtas på detta sätt.
+        -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    </head>
+    <!-- 
+        Här i body taggen kommer allt det visuella skapas.
+    -->
+    <body>
+        <!-- 
+            Jag har här valt och skapa en header med syftet 
+            att kunna beskriva vad som här huvuddelen på 
+            dokumentet. I detta element så innehåller det
+            menyer och en logo.
+        -->
+        <header>
+         <!-- 
+             Knappen för menyn
+         -->
+         <input type="checkbox" id="nav-toggle">
+
+           <!-- 
+               Har skapat en div som delar in hela naven i en kartong
+               kan man säga.
+           -->
+          <div id="wrapper">
+            <!-- 
+                Texten för menyn
+            --> 
+           <label for="nav-toggle">&#9776 Ferrari</label>
+            <!-- 
+                Nav
+            -->
+            <nav>
+                <ul>
+                    <!-- 
+                        Huvudmeny
+                    -->
+                    <li><a href="#">Guitars</a>
+                    <ul>
+                        <!-- 
+                            Undermenyer
+                        -->
+                        <li><a href="#">Les Paul</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">Epiphone<span>New</span></a>
+                        <ul>
+                            <!-- 
+                                Underundermenyer
+                            -->
+                            <li><a href="#">SG</a></li>
+                            <li><a href="#">Latest</a></li>
+                            <li><a href="#">Modern</a></li>
+                            <li><a href="#">Best seller</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Bach</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Drums</a>
+                    <ul>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Ludwig<span>New</span></a></li>
+                        <li><a href="#">Tama</a></li>
+                        <li><a href="#">Pearl<span>New</span></a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Bass</a>
+                    <ul>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">Yamaha<span>New</span></a></li>
+                        <li><a href="#">Epiphone<span>New</span></a></li>
+                        <li><a href="#">Bach</a></li>
+                    </ul>
+                    </li>
+                    <!-- 
+                        Angivit id för speciell deklaration
+                    -->
+                    <li id="sub"><a href="#">Piano</a>
+                    <ul>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Steinberg</a></li>
+                        <li><a href="#">Futura</a></li>
+                        <li><a href="#">William<span>New</span></a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+          </div>
+          <div class="logo">
+              <h1>Robin törn</h1>
+          </div>
+        </header>  <!-- Här stängs header-taggen -->
+        <!--
+            Här skapade jag en sektion där alla mina artiklar
+            kommer befinna sig. Det menas då att allt innehåll 
+            i denna sektion grupperas. Anledningen till varför 
+            jag inte väljer att använda mig av <div> istället 
+            är för att den definerar inte att det är en sektion i HTML.
+        -->
+        <section class="container-flex">
+            <article class="flex flex-card1">
+                <header>
+                    <div class="start">
+                        <div>Tjena</div>
+                    </div>
+                    <div class="sub">
+                        <div><i class="fa fa-bolt" aria-hidden="true"></i> Desserts</div>
+                        <div><i class="fa fa-imdb" aria-hidden="true"></i> Robin Törn</div>
+                    </div>
+                </header>
+                    
+                    <img src="images/fisk.jpg">
+                
+                <div class="content">
+                    <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                </div>
+                <footer>
+                    <div class="footer">
+                        <div class="icons">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+
+             <article class="flex flex-card2">
+                <header>
+                    <div class="start">
+                        <div>Tjena</div>
+                    </div>
+                    <div class="sub">
+                        <div><i class="fa fa-bolt" aria-hidden="true"></i> Desserts</div>
+                        <div><i class="fa fa-imdb" aria-hidden="true"></i> Robin Törn</div>
+                    </div>
+                </header>
+        
+                    <img src="images/fisk.jpg">
+                
+                <div class="content">
+                    <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                </div>
+                <footer>
+                    <div class="footer">
+                        <div class="icons">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+            
+             <article class="flex flex-card3">
+                <header>
+                    <div class="start">
+                        <div>Tjena</div>
+                    </div>
+                    <div class="sub">
+                        <div><i class="fa fa-bolt" aria-hidden="true"></i> Desserts</div>
+                        <div><i class="fa fa-imdb" aria-hidden="true"></i> Robin Törn</div>
+                    </div>
+                </header>
+               
+                    <img src="images/fisk.jpg">
+                
+                <div class="content">
+                    <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                </div>
+                <footer>
+                    <div class="footer">
+                        <div class="icons">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </section>
+        <div>
+            <a href="#">Next article</a>
+        </div>
+        <!-- 
+            En footer tag som definerar den nedersta
+            delen på dokumentet.
+        -->
+        <footer class="contact">
+            <p>
+                <span class="tel">Tel:0708349299 &#x0007C;</span>
+                <span class="web">&#x000A0;email:kungen@gmail.se &#x0007C;&#x000A0;</span>
+                <span class="web">web:smalandsgymnasiet.se</span>
+            </p>
+        </footer>  <!-- Slutet på footer -->
+    </body>
+</html>
