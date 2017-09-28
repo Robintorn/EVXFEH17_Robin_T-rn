@@ -210,6 +210,7 @@ a > span{
     flex-direction: column;
     margin-bottom: 5%;
     padding: 10px;
+    margin: 5px;
   }
 
   .flex .start{
@@ -225,21 +226,18 @@ a > span{
     display: flex;
     background: brown;
     flex: 1;
-    margin-right: 5px;
   }
 
   .flex-card2{
     display: flex;
     flex: 1;
     background: red;
-    margin-right: 5px;
   }
 
   .flex-card3{
     flex-grow: 2;
     display: flex;
     background: blue;
-    margin-right: 5px;
   }
 
   img{
@@ -254,7 +252,7 @@ a > span{
   }
 
   .icons{
-    margin-top: 7px;
+    line-height: 40px;
   }
   
 
