@@ -75,12 +75,12 @@ body{
     display: flex;
     flex-direction: row;
     border-top: 2px solid black;
-    
 }
 
 #side{
-    max-width: 30%;
+    max-width: 40%;
     display: flex;
+    padding: 15px;
     order: 0;
     flex-direction: column;
     background-color: gray;
@@ -169,7 +169,7 @@ hr {
 }
 
 .undertext{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .bottom{
@@ -181,6 +181,4 @@ hr {
     font-size: 15px;
 }
 
-
-  
 }
