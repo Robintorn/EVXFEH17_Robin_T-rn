@@ -236,13 +236,16 @@ a > span{
   }
 
   .flex-card3{
-    flex: 2;
+    flex-grow: 2;
     display: flex;
     background: blue;
     margin-right: 5px;
   }
 
-  
+  img{
+    height: auto;
+    width: 100%;
+    }
   
   .content{
     display: flex;

@@ -10,7 +10,7 @@
             Här länkar jag till min externa css fil som gör
             så att jag ska kunna styla mina element. 
         -->
-        <link rel="stylesheet" href="css/inlamning4a.css">
+        <link rel="stylesheet" href="css/inlamning4b.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- 
             Meta taggen innehåller helt enkelt information om 
@@ -19,7 +19,7 @@
             hjälpa webbläsaren och läsa in rätt teckenuppsättning.
         -->
         <meta charset="utf-8">
-        <title>Inlämning 4a</title>
+        <title>Inlämning 4b</title>
         <!-- 
             Den här meta taggen gör sidan mobilvänlig och skalbar
             som är anpassad för mobilenheter.
@@ -30,102 +30,47 @@
         -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     </head>
-    <!-- 
-        Här i body taggen kommer allt det visuella skapas.
-    -->
     <body>
-        <!-- 
-            Jag har här valt och skapa en header med syftet 
-            att kunna beskriva vad som här huvuddelen på 
-            dokumentet. I detta element så innehåller det
-            menyer och en logo.
-        -->
         <header>
-         <!-- 
-             Knappen för menyn
-         -->
-         <input type="checkbox" id="nav-toggle">
-
-           <!-- 
-               Har skapat en div som delar in hela naven i en kartong
-               kan man säga.
-           -->
-          <div id="wrapper">
-            <!-- 
-                Texten för menyn
-            --> 
-           <label for="nav-toggle">&#9776 Ferrari</label>
-            <!-- 
-                Nav
-            -->
-            <nav>
+            <div id="logo">
+                <div class="icons">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </div>
+                <h1>|&nbsp;LOGO&nbsp;</h1>
+                <h2>My Logo</h2>
+            </div>
+            <nav class="menu">
                 <ul>
-                    <!-- 
-                        Huvudmeny
-                    -->
-                    <li><a href="#">Guitars</a>
-                    <ul>
-                        <!-- 
-                            Undermenyer
-                        -->
-                        <li><a href="#">Les Paul</a></li>
-                        <li><a href="#">Ibanez</a></li>
-                        <li><a href="#">Epiphone<span>New</span></a>
-                        <ul>
-                            <!-- 
-                                Underundermenyer
-                            -->
-                            <li><a href="#">SG</a></li>
-                            <li><a href="#">Latest</a></li>
-                            <li><a href="#">Modern</a></li>
-                            <li><a href="#">Best seller</a></li>
-                        </ul>
-                        </li>
-                        <li><a href="#">Bach</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">Drums</a>
-                    <ul>
-                        <li><a href="#">Yamaha</a></li>
-                        <li><a href="#">Ludwig<span>New</span></a></li>
-                        <li><a href="#">Tama</a></li>
-                        <li><a href="#">Pearl<span>New</span></a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">Bass</a>
-                    <ul>
-                        <li><a href="#">Ibanez</a></li>
-                        <li><a href="#">Yamaha<span>New</span></a></li>
-                        <li><a href="#">Epiphone<span>New</span></a></li>
-                        <li><a href="#">Bach</a></li>
-                    </ul>
-                    </li>
-                    <!-- 
-                        Angivit id för speciell deklaration
-                    -->
-                    <li id="sub"><a href="#">Piano</a>
-                    <ul>
-                        <li><a href="#">Yamaha</a></li>
-                        <li><a href="#">Steinberg</a></li>
-                        <li><a href="#">Futura</a></li>
-                        <li><a href="#">William<span>New</span></a></li>
-                    </ul>
-                    </li>
+                    <li class="menu-icon icon-1"><a href="#">One <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
+                    <li class="menu-icon icon-2"><a href="#">Two <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
+                    <li class="menu-icon icon-3"><a href="#">Three <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
+                    <li class="menu-icon icon-4"><a href="#">Four <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
+                    <li class="menu-icon icon-5"><a href="#">Five <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
+                    <li class="menu-icon icon-6"><a href="#"><input type="email" placeholder="skriv....">&nbsp;<input type="submit" value="klicka"></a></li>
                 </ul>
             </nav>
-          </div>
-          <div class="logo">
-              <h1>Robin törn</h1>
-          </div>
-        </header>  <!-- Här stängs header-taggen -->
-        <!--
-            Här skapade jag en sektion där alla mina artiklar
-            kommer befinna sig. Det menas då att allt innehåll 
-            i denna sektion grupperas. Anledningen till varför 
-            jag inte väljer att använda mig av <div> istället 
-            är för att den definerar inte att det är en sektion i HTML.
-        -->
-        <section class="container-flex">
+        </header>
+        <main id="main">
+            <div id="side">
+                <h1>Första box</h1>
+                <p>
+                    asdfoaksdfoksdofksdofkasodfk
+                    asodfkasodfkasodkfasodkfosakdfoa
+                    sdfasdfasdf
+                    asdfasdfasdfasdf
+                </p>
+            </div>
+            
+            <section class="introduktion">
+                <h1>MY TITLE&nbsp;</h1>
+                <h2>With baseline</h2>
+                <p>
+                    Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem 
+                    Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem 
+                </p>
             <article class="flex flex-card1">
                 <header>
                     <div class="start">
@@ -206,20 +151,7 @@
                     </div>
                 </footer>
             </article>
-        </section>
-        <div>
-            <a href="#">Next article</a>
-        </div>
-        <!-- 
-            En footer tag som definerar den nedersta
-            delen på dokumentet.
-        -->
-        <footer class="contact">
-            <p>
-                <span class="tel">Tel:0708349299 &#x0007C;</span>
-                <span class="web">&#x000A0;email:kungen@gmail.se &#x0007C;&#x000A0;</span>
-                <span class="web">web:smalandsgymnasiet.se</span>
-            </p>
-        </footer>  <!-- Slutet på footer -->
+            </section>
+        </main>
     </body>
 </html>
