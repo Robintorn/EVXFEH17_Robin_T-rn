@@ -1,3 +1,8 @@
+/* 
+   Här använder jag mig av en Universal selector.
+   Som då gör så att alla regler som jag skriver 
+   här, kommer gälla för alla element på sidan.
+*/
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +11,21 @@
     box-sizing: border-box;
     font-family: 'merriweather';
 }
-
+/*
+  Använder en type selector. Som då bara siktar
+  in sig på ett specifikt element. T.ex om jag
+  skriver h1{color:green;}, så kommer alla h1:or
+  som finns i dokumentet stylas. 
+*/
 body{
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     padding: 0;
 }
+
+/*Alla dessa regler kommer vara satta för mobilen*/
+
 
 #logo{
     display: flex;
@@ -25,14 +38,36 @@ body{
     padding-right: 10px;
 }
 
+/*
+  Labeln kommer visas som en knapp man kan trycka på.
+  Men det jag har gjort är att dölja checkboxen som sträcker
+  sig över hela labeln. 
+*/
+label{
+  color:blue;
+  line-height: 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/*
+  Ser till att desktop-menyn inte visas.
+*/
 .menu{
     display: none;
 }
 
+/*
+  Döljer checkboxen
+*/
 #nav-toggle{
     display: none;
 }
 
+/*
+  Den kommer däremot användas för att kunna dölja och
+  visa menyn. 
+*/
 #nav-toggle:checked + .mobilmenu .menu {
     display: flex; 
     flex-direction: column;
@@ -70,12 +105,21 @@ body{
     background-color: seagreen;
 }
 
-#main{
+/*
+  Ser till att i main visas som en
+  column och inte i row.
+*/
+main{
     display: flex;
     flex-direction: column;
     border-top: 2px solid black;
 }
 
+
+/*
+  Side behållaren sätts i order: 3; Eftersom den ska komma 
+  innan copyright-delen.
+*/
 #side{
     max-width: 100%;
     display: flex;
@@ -85,6 +129,12 @@ body{
     background-color: gray;
 }
 
+/*
+  Alla items ska ha en baslinje eftersom med hjälp av detta
+  så kommer dom inte att passera baslinjen. Samtidigt vill
+  jag också att behållare ska wrapa eftersom annars så
+  kommer föräldern bara hålla dom kvar vid samma linje.   
+*/
 .introduktion{
     margin: 10px;
     display: flex;
@@ -98,8 +148,6 @@ body{
 }
 
 .flex{
-    display: flex;
-    flex-direction: column;
     margin-bottom: 5%;
     padding: 10px;
     margin-top: 30px;
@@ -110,6 +158,13 @@ body{
     font-weight: 700;
 }
 
+/*
+  Anledningen till varför jag skriver display: flex;
+  igen är för att jag vill ändra något. Eftersom dessa
+  element är redan satta som display flex(i main). Men eftersom
+  jag vill ändra något så skriver jag display flex igen
+  för att jag vill sätta en space-between.
+*/
 .sub{
     display: flex;
     justify-content: space-between; 
@@ -136,29 +191,35 @@ img{
 }
   
 .content{
-    display: flex;
     margin-top: 15px;
     margin-bottom: 50px;
 }
 
 .icons{
-    line-height: 30px;
+    line-height: 40px;
     font-size: 1em;
 }
 
+/*
+  Vill att allt content inne i footer ska centreras.
+*/
 .footer{
     display: flex;
     justify-content: center;
     height: 40px;
     background: grey;
-  }
+}
 
+/*
+  Var tvungen att sätta en deklaration för horisontala
+  linjen för att den skulle kunna synas.
+*/
 hr {
   border: 0;
   clear:both;
   display:block;
   width: 100%;               
-  background: black;
+  background: grey;
   height: 1px;
 }
 
@@ -175,45 +236,79 @@ hr {
     font-size: 15px;
 }
 
+/*
+  Deklaration för desktopen
+*/
+
 @media all and (min-width: 814px){
 
+/*
+  Ser till att inte labeln visas på
+  desktopen.
+*/
 label{
     display: none;
   }
 
+/*
+  Vill att menyn på desktopen ska förflyttas till
+  slutet av behållaren
+*/
 .menu{
     display: flex;
     justify-content: flex-end;
 }
 
+/*
+  Var tvungen att skriva dessa regler för listan
+  för att den skulle kunna vara inline.
+*/
 .menu ul{
     display: flex;
     justify-content: flex-end;
 }
 
+/*
+  Meny-ikonerna på desktopen ska ha dessa regler
+  angående bordern.
+*/
 .menu-icon{
     padding: 10px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
 
+/*
+  Var tvungen att sätta en overflow: hidden;
+  på mainen. Anledningen till detta var för 
+  annars blir det ett stort gap mellan dom
+  semantiska taggarna. 
 
-#main{
+  Här har jag också valt och sätta en
+  flex-direction på row eftersom jag vill
+  att den ska arbeta från vänster till höger.
+  Och inte från toppen till botten(column).
+*/
+main{
     overflow: hidden;
     display: flex;
     flex-direction: row;
     border-top: 2px solid black;
 }
 
+/*
+  Order: 0; sattes på side eftersom den ska vara
+  före alla flex-cards.
+*/
 #side{
-    max-width: 40%;
-    display: flex;
-    padding: 10px;
     order: 0;
-    flex-direction: column;
-    background-color: gray;
 }
 
+/*
+  Jag sätter flex-direction: column; för jag vill
+  att alla flex-cards ska arbeta från toppen till
+  botten.
+*/
 .flex{
     display: flex;
     flex-direction: column;
@@ -232,12 +327,27 @@ label{
     flex: 1;
 }
 
+/*
+  Här satte jag så att detta flex-cardet kunde förstoras
+  så att det helt enkelt tog upp ett helt stort utrymme 
+  för sig själv. Samtidigt som dom andra två får dela 
+  på ett utrymme. Man är tvungen att sätta flex-wrap: wrap;
+  för att detta flex-cardet i detta fallet ska kunna wrapa
+  och fortsätta på en ny linje. 
+  
+  Annars fortsätter dom bara på samma linje eftersom behållaren 
+  till flex-cardsen inte tillåter dom att wrapa.
+*/
 .flex-card3{
     display: flex;
     flex-grow: 2;
 }
 
 }
+
+/*
+  Alla dessa deklarationer är satta för mobiler som är mindre.
+*/
 
 @media all and (max-width: 450px) {
     #logo {

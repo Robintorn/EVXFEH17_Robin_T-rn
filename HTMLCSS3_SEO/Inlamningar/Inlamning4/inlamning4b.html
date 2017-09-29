@@ -11,6 +11,10 @@
             så att jag ska kunna styla mina element. 
         -->
         <link rel="stylesheet" href="css/inlamning4b.css">
+        <!-- 
+            Här länkar jag font-awesomes stylesheet så jag kan
+            få tillgång till deras font-icons.
+        -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- 
             Meta taggen innehåller helt enkelt information om 
@@ -31,9 +35,19 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     </head>
     <body>
+        <!-- 
+            Jag har här valt och skapa en header med syftet 
+            att kunna beskriva vad som här huvuddelen på 
+            dokumentet. I detta element så innehåller det
+            menyer och en logo.
+        -->
         <header>
             <div id="logo">
                 <div class="ikoner">
+                    <!-- 
+                        Här har vi ett exempel på font-icons.
+                        Länkad direkt från fontawesome.io.
+                    -->
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                     <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -42,22 +56,48 @@
                 <h1>|&nbsp;LOGO&nbsp;</h1>
                 <h2>My Logo</h2>
             </div>
+            <!--
+                Knappen för Mobilmenyn.
+             -->
             <input type="checkbox" id="nav-toggle">
             <div class="mobilmenu">
+            <!-- 
+                Texten för menyn
+            --> 
             <label for="nav-toggle">&#9776; MENY</label>
+            <!-- 
+                Nav
+            -->
             <nav class="menu">
+                <!-- 
+                    Huvudmeny
+                -->
                 <ul>
+                    <!--
+                        Angav list-itemsen en gemensam klass där jag kunde
+                        sätta regler för alla. I samma veva angav jag dom
+                        en unik klass där jag kunde sätta speciella regler
+                        för varje list-item.
+                     -->
                     <li class="menu-icon icon-1"><a href="#">One <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
                     <li class="menu-icon icon-2"><a href="#">Two <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
                     <li class="menu-icon icon-3"><a href="#">Three <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
                     <li class="menu-icon icon-4"><a href="#">Four <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
                     <li class="menu-icon icon-5"><a href="#">Five <i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
-                    <li class="menu-icon icon-6"><a href="#"><input type="email" placeholder="skriv....">&nbsp;<input type="submit" value="klicka"></a></li>
+                    <li class="menu-icon icon-6"><a href="#"><input type="email" placeholder="Skriv din email.....">&nbsp;<input type="submit" value="Skicka"></a></li>
                 </ul>
                </div>
             </nav>
-        </header>
-        <main id="main">
+        </header> <!-- Slutet på Header -->
+        
+        <!-- 
+            Här skapade jag ett main-element som helt enkelt
+            definerar the "main-content" i dokumentet. Ett
+            main element börs bara användas en gång. Detta
+            menas då att den ska helt enkelt inte vara 
+            en avkomma till section, article osv.
+        -->
+        <main>
             <div id="side">
                 <h1>Första box</h1>
                 <p>
@@ -71,6 +111,13 @@
                 </p>
             </div>
             
+        <!--
+            Här skapade jag en sektion där alla mina artiklar
+            kommer befinna sig. Det menas då att allt innehåll 
+            i denna sektion grupperas. Anledningen till varför 
+            jag inte väljer att använda mig av <div> istället 
+            är för att den definerar inte att det är en sektion i HTML.
+        -->
             <section class="introduktion">
                 <h1>MY TITLE&nbsp;</h1>
                 <h2>With baseline</h2>
@@ -93,6 +140,12 @@
                         skryta eller så. Men bara för att jag har det.
                 </p>
                 </div>
+            <!-- 
+                Såg till att dom 3 artiklarna fick en gemensam klass.
+                Samtidigt som jag också gav varje artikel en unik klass.
+                Detta var för att jag ska ha samma regler för alla artiklar.
+                Och i samma veva kunna sätta en bakgrundsfärg för varje. 
+            -->
             <article class="flex flex-card1">
                 <header>
                     <div class="start">
@@ -178,10 +231,16 @@
                 Jag känner att min kommunikation med boysen håller på att bättra sig.
                 Bra lir med Bosse samtidigt som Åke har börjat stima och stojja.
             </div>
-            </section>
-        </main>
+            </section> <!-- Slutet på Section -->
+        </main> <!-- Slutet på Main -->
+         
+        <!-- 
+            En footer tag som definerar den nedersta
+            delen på dokumentet.
+        -->
         <footer class="bottom">
              <p>&copy; Min Hemsida</p>
-       </footer>
+       </footer> <!-- Slutet på Footer -->
+
     </body>
 </html>
