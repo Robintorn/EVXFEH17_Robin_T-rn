@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 5.4em 40em 20em;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-areas: "header header header header" "introduktion introduktion introduktion introduktion"
+    "om om om om"; 
+}
+
+header{
+    grid-area: header;
+    background: #222831;
+    border-bottom: 2px solid #F6E9E9;
+}
+
+header .logo{
+    padding-left: 3.5em;
+    padding-top: 8px;
+    color: #F2F2F2;
+}
+
+header nav .menu{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    height: 5.2em;
+}
+
+nav .menu li{
+    display: inline;
+    line-height: 100px;
+    padding: 25px;
+}
+
+nav .menu li a{
+    color: white;
+}
+
+li a:hover{
+    border-bottom: 3px solid #F96D00;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+header .fa-glass{
+    color: #F96D00;
+}
+
+.fa-home{
+   
+}
+
+.introduktion{
+    grid-area: introduktion;
+    text-align: center;
+    color: white;
+    background: #222831;
+}
+
+.om{
+    grid-area: om;
+}
