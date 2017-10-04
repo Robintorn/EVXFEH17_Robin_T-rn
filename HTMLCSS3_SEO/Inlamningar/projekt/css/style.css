@@ -18,7 +18,7 @@ body{
 header{
     grid-area: header;
     background: #222831;
-    border-bottom: 2px solid #F6E9E9;
+    border-bottom: 3px solid #F96D00;
 }
 
 header .logo{
@@ -45,17 +45,13 @@ nav .menu li a{
 }
 
 li a:hover{
-    border-bottom: 3px solid #F96D00;
+    border-top: 3px solid #F96D00;
     cursor: pointer;
-    padding-bottom: 10px;
+    padding-top: 2.3em;
 }
 
 header .fa-glass{
     color: #F96D00;
-}
-
-.fa-home{
-   
 }
 
 .introduktion{
@@ -63,6 +59,12 @@ header .fa-glass{
     text-align: center;
     color: white;
     background: #222831;
+}
+
+.introduktion div p{
+    line-height: 2em;
+    font-size: 25px;
+    padding: 3.5em;
 }
 
 .om{
