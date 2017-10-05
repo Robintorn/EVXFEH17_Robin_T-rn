@@ -1,0 +1,33 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 50px 400px;
+    grid-template-areas: ".header header" ".main sidebar" ".footer footer"
+}
+
+header, footer{
+    background: red;
+    border:  5px solid black;
+}
+
+main, sidebar{
+    background: blue;
+    border: 5px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+sidebar{
+    grid-area: sidebar;
+}
+
+footer{
+    grid-area: footer;
+}
+
