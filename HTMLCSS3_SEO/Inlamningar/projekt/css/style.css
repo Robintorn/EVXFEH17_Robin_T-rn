@@ -82,6 +82,12 @@ main .intro p{
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: #DBE2EF;
+    color: black;
+}
+
+.artiklar{
+    padding: 1em;
 }
 
 aside{
