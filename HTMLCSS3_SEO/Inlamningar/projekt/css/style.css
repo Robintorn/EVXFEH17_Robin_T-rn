@@ -70,6 +70,11 @@ main .intro .headline{
     border-radius: 20px;
 }
 
+main .intro p{
+    font-size: 20px;
+    padding: 1em;
+}
+
 .images{
     padding: 1em;
 }
