@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <!-- 
+        Här i head taggen skapas inställningarna för sidan.
+        Dessa inställningar syns inte direkt på sidan.
+    -->
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+        <!--
+            Här länkar jag till min externa css fil som gör
+            så att jag ska kunna styla mina element. 
+        -->
         <link rel="stylesheet" href="css/inlamning5a.css">
-        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type='text/css'>
-        <title>Inlamning5a</title>
+        <!-- 
+            Här länkar jag font-awesomes stylesheet så jag kan
+            få tillgång till deras font-icons.
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- 
+            Meta taggen innehåller helt enkelt information om 
+            informationen på hemsidan. I detta fall så använder
+            vi attributet charset med värdet UTF-8 för att kunna
+            hjälpa webbläsaren och läsa in rätt teckenuppsättning.
+        -->
+        <meta charset="utf-8">
+        <title>Inlämning 5a</title>
+        <!-- 
+            Den här meta taggen gör sidan mobilvänlig och skalbar
+            som är anpassad för mobilenheter.
+        -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- 
+            Typsnittet Merriweather hämtas på detta sätt.
+        -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     </head>
     <body class="site">
     
@@ -15,12 +42,30 @@
       <h2 class="site-title">Lion hunter</h2>
     </header><!-- .masthead -->
 
+    <!-- 
+        Start main
+    -->
     <main class="main-area">
+        <!-- 
+            Start ul
+        -->
         <ul class="cards">
+            <!-- 
+                Sett till så att alla list-items har en gemensam klass.
+                Men har också satt en specifik klass för det första
+                list-itemet och den 8:e. 
+                
+                Detta är för att det kommer
+                komma till användning senare när jag ska sätta unika
+                regler för dessa två.
+            -->
             <li class="card-item double">
+                <!-- 
+                    Hela kortet ska vara klickbart.
+                -->
                 <a href="#">
                     <figure class="card">
-                        <img src="https://www.purina-latam.com/ve/app/themes/theme-avatar/assets/img/home/perro.png">
+                        <img src="https://cdn.shopify.com/s/files/1/1133/5028/files/Rhodesian-Ridgeback_dog_4882b6a4-b961-478e-88d1-c8753b8fd05b.jpg?v=1490293203">
                         <figcaption class="caption">
                             <h3 class="caption-title">Lines of Growth</h3>
 							<p>Everything that grows creates lines; the abstract telling of the story of a life.</p>
@@ -150,8 +195,8 @@
                 </a>
             </li>
 
-        </ul>
-    </main>
+        </ul> <!-- End ul -->
+    </main> <!-- End main -->
 
 
 </body>

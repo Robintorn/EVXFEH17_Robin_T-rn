@@ -221,13 +221,19 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 @supports (grid-area:auto) {
 
+	/*Tablet*/
+
 	@media screen and (min-width: 27em) {
 
 		.cards {
-			margin: 0 auto;
+			margin: 1em auto;
 			padding: 1em;
 		}
-
+        /*
+		  Här har jag lagt så att bilden och texten delar in sig
+		  i två kolumner. Bilderna har jag satt till 8em.
+		  Och texterna till auto så att dom tar den plats dom behöver.
+		*/
 		.card {
             display: grid;
             grid-template-columns: 8em auto;
@@ -247,25 +253,48 @@ CSS Grid layout for wider screens, when browser supports grid:
 
 
 }
-@media screen and (min-width: 60em) {
- 
 
+/*Desktop*/
+
+@media screen and (min-width: 60em) {
+
+/*Nollställer margins*/
+.card{
+	margin: 0;
+}
+
+.cards a{
+	margin: 0;
+	font-size: 16px;
+}
+/*
+  Här har jag satt så att listan delar in sig 
+  i två kolumner. Samtidigt har jag satt så att
+  kolumnerna får 25em vardera. 
+
+  Och ett grid-gap på 1em så dom får mellan rum
+  gällande både grid-row och grid-column.
+*/
 .cards{
+	max-width: 50em;
     display: grid;
-    width: 100%;
-	max-width: 950px;
     grid-template-columns:25em 25em;
     grid-gap:1em;
 }
 
+/*
+  Ser till så att så att dom två list-itemen 
+  spänner sig över tre rader.
+*/
 .double{
     grid-row: span 3;
     grid-column:span 1;
     
 }
-
-.card-item.double:nth-child(7n + 1) figure{
-    height: auto;
+/*
+  Anger så att den visas som ett block-element.
+*/
+.card-item.double figure{
     display: block;
 }
 
