@@ -8,19 +8,16 @@
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer"
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"
 }
 
 header{
     background-color: #3F72AF;
-}
-
-header{
     grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     border-bottom: 2px solid #DBE2EF;
 }
 
@@ -31,7 +28,7 @@ header{
 }
 
 .logo .fa-glass{
-    font-size: 35px;
+    font-size: 45px;
     color: #112D4E;
 }
 
@@ -55,7 +52,6 @@ nav ul li a{
 main{
     grid-area: main;
     background: #112D4E;
-    display: grid;
     color: white;
 }
 
@@ -67,7 +63,7 @@ main .intro{
 main .intro .headline{
     font-size: 20px;
     border-top: 2px solid gray;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 main .intro p{
@@ -79,22 +75,8 @@ main .intro p{
     padding: 1em;
 }
 
-.content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #DBE2EF;
-    color: black;
-}
-
-.artiklar{
-    padding: 1.5em;
-}
-
-aside{
-    grid-area: sidebar;
-}
-
 footer{
     grid-area: footer;
+    
 }
 
