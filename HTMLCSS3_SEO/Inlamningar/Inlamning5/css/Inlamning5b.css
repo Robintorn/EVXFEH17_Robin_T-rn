@@ -38,6 +38,18 @@ label{
     line-height: 40px;
 }
 
+nav ul li a{
+    color: black;
+}
+
+nav ul ul li a{
+    color: blue;
+}
+
+nav ul ul ul li a{
+    color: red;
+}
+
 #nav-toggle:checked + #wrapper nav{
     display: block;
 }
@@ -62,6 +74,7 @@ label{
             "box3 box4"
             "box5 box6"
             "box7 ."
+            "footer ."
             ;
         }
 
@@ -75,12 +88,13 @@ label{
 	margin: 0 auto 0 auto;
 	padding: 0;
 	display: grid;
-    grid-gap: 7em;
 	max-width: 960px;
 	grid-template-columns: 1fr;
     grid-template-areas:
     "header"
-    "artiklar";   
+    "artiklar"
+    "footer"
+    ;   
 	
 }
 
@@ -91,6 +105,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 8em;
 }
 
 .logo{
@@ -105,48 +120,56 @@ label{
 nav{
     display: flex;
   }
+
   nav ul{
     display: flex;
     flex-direction: row;
-  }
+}
 
-  nav ul li{
-      padding: 1em;
-      font-size: 20px;
-  }
-  
+nav ul li{
+    padding: 1em;
+    font-size: 20px;
+}
 
-  nav ul li a{
-      color: black;
-  }
+nav ul li a{
+    color: black;
+}
+
+nav ul ul li a{
+    color: black;
+}
+
+nav ul ul ul li a{
+    color: black;
+}
   
-  nav ul ul{
+nav ul ul{
     display: flex;
     flex-direction: column;
     
-  }
+}
  
-  nav ul ul li{
+nav ul ul li{
     position: relative;
     display: none;
-  }
+}
   
-  nav ul ul ul{
+nav ul ul ul{
     display: none;
-  }
+}
   
   
-  nav ul li:hover ul li{
+nav ul li:hover ul li{
     display: block;
-  }
+}
   
-  nav ul ul li:hover ul{
+nav ul ul li:hover ul{
     display: block;
     position: absolute;
     width: 200px;
     left: 100%;
     top:0px;
-  }
+}
 
 
 .artiklar{
@@ -160,6 +183,11 @@ nav{
     "box4 box2 box2 box5 box5"
     "box6 box6 box7 box5 box5"
 }
+
+.borderleft{
+    border-left: 1px solid grey;
+}
+
 
 }
 
@@ -202,6 +230,24 @@ nav{
     grid-area: box7;
     background: forestgreen;
 }
+
+footer{
+    padding: 1em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerleft{
+    line-height: 2em;
+    font-size: 17px;
+}
+
+.ikoner{
+    color: blue;
+    font-size: 40px;
+}
+
 
 }
 
