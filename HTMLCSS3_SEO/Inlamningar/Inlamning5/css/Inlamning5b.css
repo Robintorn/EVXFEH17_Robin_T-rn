@@ -10,6 +10,7 @@
 
 img{
     max-width: 100%;
+    height: auto;
 }
 
 nav{
@@ -65,6 +66,7 @@ nav ul ul ul li a{
             max-width: 960px;
         }
 
+
         .artiklar {
             grid-area: artiklar;
             display: grid;
@@ -74,7 +76,6 @@ nav ul ul ul li a{
             "box3 box4"
             "box5 box6"
             "box7 ."
-            "footer ."
             ;
         }
 
@@ -85,16 +86,14 @@ nav ul ul ul li a{
     @media all and (min-width: 60em) {
 
 .grid{
-	margin: 0 auto 0 auto;
-	padding: 0;
 	display: grid;
-	max-width: 960px;
-	grid-template-columns: 1fr;
+    max-width: 960px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
-    "header"
-    "artiklar"
-    "footer"
-    ;   
+       "header"
+       "main"
+       "footer";   
 	
 }
 
@@ -119,16 +118,59 @@ label{
 
 nav{
     display: flex;
-  }
-
-  nav ul{
-    display: flex;
-    flex-direction: row;
 }
 
-nav ul li{
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+nav ul li {
     padding: 1em;
     font-size: 20px;
+}
+
+nav ul ul li {
+    padding: 0.5em 0em;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    width: 100%;
+}
+
+nav li:hover ul {
+    display: flex;
+}
+
+nav ul ul li:hover ul li {
+    position: relative;
+    display: block;
+    width: 50px;
+    left: 100%;
+    top: -30px;
+}
+
+nav ul ul ul li {
+    display: none;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover{
+    color: lightblue;
 }
 
 nav ul li a{
@@ -136,51 +178,20 @@ nav ul li a{
 }
 
 nav ul ul li a{
-    color: black;
+    color: lightblue;
 }
 
 nav ul ul ul li a{
-    color: black;
+    color: lightblue;
 }
-  
-nav ul ul {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
- 
-nav ul ul li{
-    display: none;
-}
-  
-nav ul ul ul{
-    display: none;
-}
-  
-nav ul li:hover ul li{
-    display: block;
-}
-  
-nav ul ul li:hover ul{
-    display: block;
-    position: absolute;
-    width: 200px;
-    left: 80px;
-    top:100px;
-}
-
- nav ul ul li {
-    padding: 0.5em 0em;
-}
-
 
 .artiklar{
-    grid-area: artiklar;
-    display: grid;
+    grid-area: main;
     grid-gap: 1em;
     padding: 1em;
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
     "box1 box2 box2 box3 box3"
     "box4 box2 box2 box5 box5"
@@ -235,6 +246,7 @@ nav ul ul li:hover ul{
 }
 
 footer{
+    grid-area: footer;
     padding: 1em;
     margin-top: 2em;
     display: flex;

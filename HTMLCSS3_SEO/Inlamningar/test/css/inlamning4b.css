@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* fallback and mobile */ 
+body {
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+/* fallback styling */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+label {
+    font-size: 20pt;
+}
+
+#logo {
+    font-size: 32pt; /* center */
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper .cards li {
+    margin-bottom: 2em;
+}
+
+#wrapper li .card {
+    border: 1px solid black;
+}
+
+/* flex-navbar */
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .navbar nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-header nav ul {
+    display: none;
+    padding-left: 1.5em;
+}
+
+.flex-header ul li a {
+    color: black;
+}
+
+.navbar ul ul a {
+    color: lightblue;
+}
+
+.flex-header ul li:hover a {
+    color: skyblue;
+}
+
+@supports (grid-area: auto) {
+
+    li:hover p {
+        background-color: transparent;
+    }
+
+    @media all and (min-width: 27em) {
+        #wrapper {
+            margin: 0 auto;
+        }
+
+        #wrapper .cards li {
+            margin: 0; 
+            border: 0;
+        }
+
+        #wrapper .cards div {
+            border-top: 1px solid black;
+        }
+
+        .cards {
+            grid-area: cards;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(100px, auto));
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin: 4em auto;
+            grid-template-areas: 
+                "card1 card2"
+                "card3 card4"
+                "card5 card6"
+                "card7 .";
+        }
+    }
+
+    @media all and (min-width: 60em) {
+        
+        label{
+            display: none;
+        }
+
+        nav ul ul ul li {
+            display: none;
+        }
+
+        .flex-header {
+            grid-area: nav;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .flex-header nav ul {
+            display: flex;
+            padding: 0;
+        }
+
+        .flex-header nav ul li {
+            padding: 1em;
+        }
+
+        .flex-header nav ul ul li {
+            padding: 0.5em 0em;
+        }
+
+        .flex-header nav ul li {
+            position: relative;
+        }
+
+        .flex-header ul ul {
+            position: absolute;
+            width: 100%;
+        }
+
+        .flex-header li:hover ul {
+            display: flex;
+        }
+
+        nav ul ul li:hover ul li {
+            position: relative;
+            display: block;
+            width: 50px;
+            left: 100%;
+            top: -30px;
+        }
+        
+        .navbar ul ul ul {
+            display: none;
+        }
+
+        .navbar ul ul {
+            display: none;
+        }
+
+        .flex-header li:hover ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #wrapper {
+            max-width: 960px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "nav"
+                "cards"
+                "footer";        
+        }
+
+        .cards {
+            grid-area: cards;
+            grid-template-columns: repeat(5, minmax(100px, auto));
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 10px;
+            grid-auto-flow: dense;
+            grid-template-areas: 
+                "card1 card2 card2 card3 card3"
+                "card4 card2 card2 card5 card5"
+                "card6 card6 card7 card5 card5"
+                "card6 card6 card7 card5 card5";
+        }
+    } 
+
+    .card {
+        background-color: inherit;
+    }
+
+    .card p {
+        padding: 0px 5px;
+    }
+
+    .card1 {
+        grid-area: card1;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+    }
+
+    .card4 {
+        grid-area: card4;
+    }
+
+    .card5 {
+        grid-area: card5;
+    }
+
+    .card6 {
+        grid-area: card6;
+    }
+
+    .card7 {
+        grid-area: card7;
+    }
+
+    .site-footer {
+        grid-area: footer;
+        display: flex;
+        align-items: center;
+        background-color: inherit;
+        justify-content: space-between;
+    }
+}
