@@ -1,8 +1,207 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
     list-style-type: none;
     text-decoration: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
+img{
+max-width: 100%;
+}
+
+nav{
+    display: none;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+label{
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#nav-toggle:checked + #wrapper nav{
+    display: flex;
+    flex-direction: column;
+}
+
+@supports (grid-area: auto) {
+
+   
+
+    @media all and (min-width: 27em) {
+
+        .grid{
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        .artiklar {
+            grid-area: artiklar;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "box1 box2"
+            "box3 box4"
+            "box5 box6"
+            "box7 ."
+            ;
+        }
+
+        
+
+    }    
+
+    @media all and (min-width: 60em) {
+
+.grid{
+	margin: 0 auto 0 auto;
+	padding: 0;
+	display: grid;
+    grid-gap: 7em;
+	max-width: 960px;
+	grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "artiklar";   
+	
+}
+
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo{
+    font-size: 25px;
+    padding: 10px;
+}
+
+label{
+    display: none;
+}
+
+nav{
+    display: flex;
+  }
+  nav ul{
+    display: flex;
+  }
+  
+
+  nav ul li{
+      padding: 1em;
+      font-size: 20px;
+  }
+
+  nav ul li a{
+      color: black;
+  }
+  
+  /*
+    Ser till så att andra listan arbetar
+    uppifrån och nedåt.
+  */
+  nav ul ul{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  /*
+    Vill att undermenyn ska positioneras
+    relativt från sin behållare och att
+    den inte ska visas.
+  */
+  nav ul ul li{
+    position: relative;
+    display: none;
+  }
+  /*
+    Vill inte att tredje listan heller
+    ska visas.
+  */
+  nav ul ul ul{
+    display: none;
+  }
+  
+  /*
+    När man hovrar på list-items som tillhör
+    första listan så ska list-items som 
+    tillhör andra listan visas som block.
+  */
+  nav ul li:hover ul li{
+    display: block;
+  }
+  /*
+    När man hovrar på list-items(som tillhör andra listan) 
+    som är en förälder till en ul så ska den visas
+    som block. Samtidigt satt position
+    absolute för att kunna justera med
+    top, left osv.
+  */
+  nav ul ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 200px;
+    left: 100%;
+    top:0px;
+  }
+
+
+.artiklar{
+    grid-area: artiklar;
+    display: grid;
+    grid-gap: 1em;
+    padding: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "box1 box2 box2 box3 box3"
+    "box4 box2 box2 box5 box5"
+    "box6 box6 box7 box5 box5"
+}
+
+}
+
+.kort{
+    border-top: 1px solid black;
+    line-height: 2.5em;
+}
+
+.kort1{
+    grid-area: box1;
+}
+
+.kort2{
+    grid-area: box2;
+}
+
+.kort3{
+    grid-area: box3;
+}
+
+.kort4{
+    grid-area: box4;
+}
+
+.kort5{
+    grid-area: box5;
+}
+
+.kort6{
+    grid-area: box6;
+}
+    
+
+
+}
+
