@@ -9,12 +9,13 @@
 
 
 img{
-max-width: 100%;
+    max-width: 100%;
 }
 
 nav{
     display: none;
 }
+
 
 #nav-toggle{
     display: none;
@@ -24,11 +25,11 @@ label{
     color: blue;
     font-size: 20px;
     cursor: pointer;
+    line-height: 40px;
 }
 
 #nav-toggle:checked + #wrapper nav{
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 @supports (grid-area: auto) {
@@ -108,47 +109,26 @@ nav{
       color: black;
   }
   
-  /*
-    Ser till så att andra listan arbetar
-    uppifrån och nedåt.
-  */
   nav ul ul{
     display: flex;
     flex-direction: column;
     
   }
-  /*
-    Vill att undermenyn ska positioneras
-    relativt från sin behållare och att
-    den inte ska visas.
-  */
+ 
   nav ul ul li{
     position: relative;
     display: none;
   }
-  /*
-    Vill inte att tredje listan heller
-    ska visas.
-  */
+  
   nav ul ul ul{
     display: none;
   }
   
-  /*
-    När man hovrar på list-items som tillhör
-    första listan så ska list-items som 
-    tillhör andra listan visas som block.
-  */
+  
   nav ul li:hover ul li{
     display: block;
   }
-  /*
-    När man hovrar på list-items(som tillhör andra listan) 
-    som är en förälder till en ul så ska den visas
-    som block. Samtidigt satt position
-    absolute för att kunna justera med
-    top, left osv.
-  */
+  
   nav ul ul li:hover ul{
     display: block;
     position: absolute;
@@ -179,29 +159,38 @@ nav{
 
 .kort1{
     grid-area: box1;
+    background: red;
 }
 
 .kort2{
     grid-area: box2;
+    background: blue;
 }
 
 .kort3{
     grid-area: box3;
+    background: blueviolet
 }
 
 .kort4{
     grid-area: box4;
+    background: seagreen;
 }
 
 .kort5{
     grid-area: box5;
+    background: goldenrod;
 }
 
 .kort6{
     grid-area: box6;
+    background: violet;
 }
     
-
+.kort7{
+    grid-area: box7;
+    background: forestgreen;
+}
 
 }
 
