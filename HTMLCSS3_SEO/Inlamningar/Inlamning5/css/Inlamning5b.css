@@ -1,3 +1,4 @@
+/* Universal */
 *{
     font-family: 'lato', Arial, Helvetica, sans-serif;
     list-style-type: none;
@@ -7,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* Mobile */
 
 img{
     max-width: 100%;
@@ -28,10 +30,18 @@ ul li{
     padding-top: 0.5em;
 }
 
+/*
+  Döljer checkboxen
+*/
 #nav-toggle{
     display: none;
 }
 
+/*
+  Labeln kommer visas som en knapp man kan trycka på.
+  Men det jag har gjort är att dölja checkboxen som sträcker
+  sig över hela labeln. 
+*/
 label{
     color: blue;
     font-size: 20px;
@@ -51,13 +61,20 @@ nav ul ul ul li a{
     color: red;
 }
 
+/*
+  Här gör jag så att när checkboxen bockas av så kommer
+  hela menyn visas.
+*/
 #nav-toggle:checked + #wrapper nav{
     display: block;
 }
 
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
 @supports (grid-area: auto) {
 
-   
+    /* Tablet */
 
     @media all and (min-width: 27em) {
 
@@ -85,6 +102,16 @@ nav ul ul ul li a{
 
     @media all and (min-width: 60em) {
 
+/* Desktop */
+
+
+/*
+  Sett till så att layouten delar in sig
+  i 3-areas med en kolumn. En header, main 
+  och footer. 
+
+  Har valt och inte använda mig av full-screen.
+*/
 .grid{
 	display: grid;
     max-width: 960px;
@@ -97,7 +124,19 @@ nav ul ul ul li a{
 	
 }
 
+/*
+  Har gjort så att alla items i headern
+  ska få en baseline eftersom då får
+  dom en bas-linje.
 
+  Jag har också gjort så att header får
+  sitt värde gällande grid-area.
+  
+  Anledningen varför jag satte flex-direction
+  row istället för column är därför jag vill
+  att den ska arbeta från vänster till höger.
+  Och inte uppifrån och nedåt.
+*/
 header{
     grid-area: header;
     display: flex;
@@ -115,6 +154,9 @@ header{
 label{
     display: none;
 }
+
+
+/* Meny */
 
 nav{
     display: flex;
@@ -185,34 +227,57 @@ nav ul ul ul li a{
     color: lightblue;
 }
 
+/* Main-content */
+
+/*
+  Här har jag först gjort så att den semantiska
+  taggen main ska få sitt värde till area. 
+
+  Efter detta såg jag till att jag skulle använda
+  mig av 5 kolumner som jag kommer kunna använda
+  mig av när jag placerar ut dom olika korten.
+
+  Och ett grid-gap på 1em så dom får mellan rum
+  gällande både grid-gap-row och grid-gap-column.
+*/
 .artiklar{
     grid-area: main;
-    grid-gap: 1em;
     padding: 1em;
     display: grid;
+    grid-gap: 1em;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr auto);
     grid-template-areas: 
     "box1 box2 box2 box3 box3"
     "box4 box2 box2 box5 box5"
     "box6 box6 box7 box5 box5"
 }
 
-.borderleft{
-    border-left: 1px solid grey;
 }
 
 
-}
+/*
+  Valde att placera ut dom här reglerna utanför
+  @supports (grid-area: auto) så att det gäller
+  för både desktop och mobilen samt tableten 
+  då i detta fall.
+*/
 
+
+/* Kort */
 .kort{
     border-top: 1px solid black;
     line-height: 2.5em;
 }
 
+/*
+  Fastställt så att dom får sitt värde
+  angående grid-areas som jag har placerat
+  ut.
+*/
 .kort1{
     grid-area: box1;
-    background: red;
+    background: black;
 }
 
 .kort2{

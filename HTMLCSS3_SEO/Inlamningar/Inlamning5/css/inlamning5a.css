@@ -273,7 +273,7 @@ CSS Grid layout for wider screens, when browser supports grid:
   kolumnerna får 25em vardera. 
 
   Och ett grid-gap på 1em så dom får mellan rum
-  gällande både grid-row och grid-column.
+  gällande både grid-gap-row och grid-gap-column.
 */
 .cards{
 	max-width: 50em;
@@ -294,10 +294,11 @@ CSS Grid layout for wider screens, when browser supports grid:
 /*
   Anger så att den visas som ett block-element.
 */
-.card-item.double figure{
-    display: block;
+.double figure{
+	display: block;
 }
 
 }
 
 
+}
