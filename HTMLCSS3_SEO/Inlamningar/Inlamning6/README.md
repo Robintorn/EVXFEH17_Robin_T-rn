@@ -1,5 +1,32 @@
-# Gulp Starter for CSS Tricks Tutorial  
+## Gulp basic setup
 
-This repo is a gulp starter for this CSS Tricks tutorial. 
+#### Basic setup for gulp with few packages. 
 
-Remember to do run the `npm install` command after cloning this repo :) 
+```
+   NPM
+   
+   npm init (package.json)
+   Install gulp (gulp)
+   Install gulp-sass (gulp med SASS)
+   Install gulp-useref (slår ihop javascript filer till en)
+   Install browser-sync (uppdaterar live) 
+   Install gulp-uglify (minify JS)
+   Install run-sequence (runs packages at right time)
+   Install gulp-cssnano (minify css) 
+   Install gulp-imagemin (optimize images)
+   Install gulp-cache (don't load all pictures everytime)
+   
+   --save-dev (save to local repo)
+```
+
+## Installation
+``Use npm install with package.json to install directly``
+
+
+## Use gulp to compile SASS
+
+##### Run gulp build and browser sync
+``gulp``
+
+##### Build project with gulp
+``gulp build``
