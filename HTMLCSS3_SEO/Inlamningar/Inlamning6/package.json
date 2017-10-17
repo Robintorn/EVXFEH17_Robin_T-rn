@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/Robintorn/EVXFEH17_Robin_Torn.git"
   },
-  "author": "Robin.torn",
+  "author": "Robin Torn",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
