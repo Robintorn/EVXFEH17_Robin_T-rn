@@ -1,3 +1,6 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lato'); 
+
 *{
     font-family: 'lato', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -13,12 +16,14 @@ body{
 
 img{
     width: 100%;
+    height: auto;
 }
 
 
 .grid{
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 1em;
     grid-template-rows: auto;
     grid-template-areas: 
     "header"

@@ -2,6 +2,10 @@ header{
   grid-area: header;
 }
 
+#nav-toggle{
+  display: none;
+}
+
 nav{
   @extend %nav-standard;
 
@@ -29,7 +33,6 @@ nav{
 
         li{
           display: block;
-
           a{
             margin-top: 10px;
             transition: 0.5s;
@@ -46,6 +49,7 @@ nav{
     & > li{
       color: $secondary-color;
       transition: 0.5s;
+      padding: 2.5em;
 
       &:hover{
         background: $third-color;
@@ -65,3 +69,37 @@ nav{
 
 }
 
+@include respond-to('small') {
+
+  nav{
+    display: none;
+  }
+
+  label{
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 40px;
+  }
+
+  #nav-toggle:checked + #wrapper nav{
+    display: flex;
+}
+
+}  
+
+@include respond-to('large') {
+
+  #nav-toggle{
+    display: none;
+  }
+
+  label{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+  }
+
+}
