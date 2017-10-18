@@ -1,0 +1,20 @@
+%nav-standard{
+  background: $secondary-color;
+  font-size: 16px;
+}
+
+%megamenu{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap; 
+  width: 1200px;
+  top: -9999px;
+  left: 0;
+  padding: 40px 40px 0 40px;
+  background: $fourth-color;
+  text-align: left;
+  border-top: 5px solid $secondary-color;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+

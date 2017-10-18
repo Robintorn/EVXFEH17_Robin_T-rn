@@ -1,13 +1,20 @@
-* {
-  font-family: 'lato', Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-  box-sizing: border-box; }
+nav {
+  background: #8594E4;
+  font-size: 16px; }
 
-body {
-  background: whitesmoke; }
+nav > ul .megamenu {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  top: -9999px;
+  left: 0;
+  padding: 40px 40px 0 40px;
+  background: #430F58;
+  text-align: left;
+  border-top: 5px solid #8594E4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -399,3 +406,99 @@ template {
    */
 [hidden] {
   display: none; }
+
+* {
+  font-family: 'lato', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box; }
+
+body {
+  background: #D5DEF5; }
+
+img {
+  width: 100%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+header {
+  grid-area: header; }
+
+nav > ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0; }
+  nav > ul .megamenu h4 {
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  nav > ul .megamenu ul {
+    width: 25%;
+    margin-bottom: 40px;
+    color: #000;
+    box-shadow: none; }
+    nav > ul .megamenu ul li {
+      display: block; }
+      nav > ul .megamenu ul li a {
+        margin-top: 10px;
+        transition: 0.5s;
+        color: white; }
+        nav > ul .megamenu ul li a:hover {
+          color: #4096ee; }
+  nav > ul > li {
+    color: #8594E4;
+    transition: 0.5s; }
+    nav > ul > li:hover {
+      background: #6643B5; }
+    nav > ul > li:hover ul.megamenu {
+      top: 100%; }
+    nav > ul > li > a {
+      padding: 15px 25px;
+      color: white; }
+
+.artiklar {
+  grid-area: main;
+  padding: 1em;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "box1 box2 box2 box3 box3" "box4 box2 box2 box5 box5" "box6 box6 box7 box5 box5"; }
+  .artiklar .kort {
+    border-top: 1px solid black;
+    line-height: 2.5em; }
+  .artiklar .kort1 {
+    grid-area: box1; }
+  .artiklar .kort2 {
+    grid-area: box2; }
+  .artiklar .kort3 {
+    grid-area: box3; }
+  .artiklar .kort4 {
+    grid-area: box4; }
+  .artiklar .kort5 {
+    grid-area: box5; }
+  .artiklar .kort6 {
+    grid-area: box6; }
+  .artiklar .kort7 {
+    grid-area: box7; }
+
+footer {
+  grid-area: footer;
+  padding: 1em;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between; }
+  footer .footerleft {
+    line-height: 2em;
+    font-size: 17px; }
+  footer .ikoner {
+    color: blue;
+    font-size: 40px; }

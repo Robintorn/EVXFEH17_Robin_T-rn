@@ -8,5 +8,20 @@
 }
 
 body{
-    background: whitesmoke;
+    background: $primary-color;
+}
+
+img{
+    width: 100%;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }

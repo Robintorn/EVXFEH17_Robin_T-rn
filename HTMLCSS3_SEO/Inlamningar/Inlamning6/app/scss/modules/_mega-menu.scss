@@ -1,0 +1,67 @@
+header{
+  grid-area: header;
+}
+
+nav{
+  @extend %nav-standard;
+
+  & > ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+    .megamenu{
+      @extend %megamenu;
+
+      h4{
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      ul{
+        width: 25%;
+        margin-bottom: 40px;
+        color: #000;
+        box-shadow: none;
+
+        li{
+          display: block;
+
+          a{
+            margin-top: 10px;
+            transition: 0.5s;
+            color: white;
+
+            &:hover{
+              color: #4096ee;
+            }
+          }
+        }
+      }
+    }
+
+    & > li{
+      color: $secondary-color;
+      transition: 0.5s;
+
+      &:hover{
+        background: $third-color;
+      }
+
+      &:hover ul.megamenu{
+        top: 100%;
+      }
+
+      & > a{
+        padding: 15px 25px;
+        color: white;
+      }
+    }
+  }
+  
+
+}
+

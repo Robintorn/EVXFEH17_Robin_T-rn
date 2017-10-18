@@ -1,0 +1,17 @@
+footer{
+    grid-area: footer;
+    padding: 1em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+
+    .footerleft{
+        line-height: 2em;
+        font-size: 17px;
+    }
+    
+    .ikoner{
+        color: blue;
+        font-size: 40px;
+    }
+}
