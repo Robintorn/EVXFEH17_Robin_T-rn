@@ -43,6 +43,12 @@ nav > ul .megamenu {
   box-shadow: 0 5px 10px #430F58;
   z-index: 1; }
 
+/* Placeholder */
+.placeholder, footer .footer1, footer .footer2, footer .footer3 {
+  border: 1px solid #D5DEF5;
+  padding: 10px;
+  color: black; }
+
 /* Importerat partials */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -590,4 +596,13 @@ footer {
   justify-content: center; }
   footer .footermain {
     line-height: 2em;
-    font-size: 17px; }
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333; }
+  footer .footer1 {
+    border-color: green; }
+  footer .footer2 {
+    border-color: red; }
+  footer .footer3 {
+    border-color: yellow; }

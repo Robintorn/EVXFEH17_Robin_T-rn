@@ -9,8 +9,26 @@ footer{
     display: flex;
     justify-content: center;
 
-    .footermain{
+    .footermain {
         line-height: 2em;
         font-size: 17px;
-    }
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #333;
+      }
+      
+      .footer1 {
+        @extend .placeholder;
+        border-color: green;
+      }
+      
+      .footer2 {
+        @extend .placeholder;
+        border-color: red;
+      }
+      
+      .footer3 {
+        @extend .placeholder;
+        border-color: yellow;
+      }
 }
