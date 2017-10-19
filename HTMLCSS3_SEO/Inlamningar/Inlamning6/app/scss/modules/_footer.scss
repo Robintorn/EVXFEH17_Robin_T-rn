@@ -19,16 +19,13 @@ footer{
       
       .footer1 {
         @extend .placeholder;
-        border-color: green;
       }
       
       .footer2 {
         @extend .placeholder;
-        border-color: red;
       }
       
       .footer3 {
         @extend .placeholder;
-        border-color: yellow;
       }
 }
