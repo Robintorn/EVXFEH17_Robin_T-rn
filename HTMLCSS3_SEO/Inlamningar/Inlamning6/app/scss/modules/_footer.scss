@@ -1,17 +1,16 @@
+/* Footer */
+
+
+/* Nesting */
 footer{
     grid-area: footer;
     padding: 1em;
-    margin-top: 2em;
+    background: $third-color;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
-    .footerleft{
+    .footermain{
         line-height: 2em;
         font-size: 17px;
-    }
-    
-    .ikoner{
-        color: $fourth-color;
-        font-size: 40px;
     }
 }

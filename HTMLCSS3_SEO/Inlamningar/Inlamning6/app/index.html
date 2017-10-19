@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html>
-
+ <!-- 
+    Här i head taggen skapas inställningarna för sidan.
+    Dessa inställningar syns inte direkt på sidan.
+  -->
 <head>
+  <!-- 
+    Meta taggen innehåller helt enkelt information om 
+    informationen på hemsidan. I detta fall så använder
+    vi attributet charset med värdet UTF-8 för att kunna
+    hjälpa webbläsaren och läsa in rätt teckenuppsättning.
+  -->
   <meta charset="UTF-8">
   <title>Inlamning6</title>
+  <!--
+     Här länkar jag till min externa css fil som gör
+     så att jag ska kunna styla mina element. 
+  -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- 
+     Den här meta taggen gör sidan mobilvänlig och skalbar
+     som är anpassad för mobilenheter.
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+  <!-- Grid container -->
   <div class="grid">
+    <!-- 
+       Header
+    -->
     <header>
-
+        <!-- 
+           Checkbox för mobil-menyn 
+        -->      
         <input type="checkbox" id="nav-toggle">
-
+        <!-- 
+           En div som hela menyn läggs i.
+           när man ska kunna dölja och visa
+           Mobil-menyn.
+        -->
         <div id="wrapper">
-
-         <label for="nav-toggle">&#9776 Lamborghini</label>
+         <!-- 
+            Texten för mobil-menyn
+         -->
+         <label for="nav-toggle">&#9776 Mobil-menu</label>
+          <!-- 
+             Nav
+          -->
         <nav>
+  <!-- 
+    Huvud-menyn
+  -->
   <ul>
     <li><a href="#">Home</a></li>
-    <li class="submenu"><a href="#">Produkter</a>
+    <li><a href="#">Produkter</a>
+      <!-- 
+        Mega-menyn
+      -->
       <ul class="megamenu">
         <ul>
           <h4>Arbeitsspeicher</h4>
@@ -90,11 +128,23 @@
     <li><a href="#">Kontakt</a></li>
     <li><a href="#">Impressum</a></li>
   </ul>
-</nav>
-</div>
-</header>
-<main class="artiklar">
+</nav> <!-- End nav -->
 
+</div>
+
+</header>  <!-- End header -->
+
+<!-- Start main(class: .artiklar) -->
+<main class="artiklar">
+  <!-- 
+     Sett till så att alla list-items har en gemensam klass.
+     Men har också satt en specifik klass för det första
+     list-itemet och den 8:e. 
+                
+     Detta är för att det kommer
+     komma till användning senare när jag ska sätta unika
+     regler för dessa två.
+  -->
   <article class="kort kort1">
     <h2>Tjena</h2>
   <img src="http://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg">
@@ -130,19 +180,15 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ2LyHM9eue170NHW9Ng7YpzMwW1kCh4g4uxX06wJYp4IyRQILSg">
   </article>
 
-</main>
+</main> <!-- End main -->
+
+<!-- Start footer -->
 <footer>
-    <div class="footerleft">
-        <h2>The king of the kings</h2>
-        <p>Tags: Clean, Grid, Agency, Services, Black and White</p>
+    <div class="footermain">
+        <h2>Footer</h2>
     </div>
-    <div class="ikoner">
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-    </div>
-</footer>
-</div>
+</footer> <!-- End footer -->
+</div> <!-- End gridcontainer -->
 </body>
 
 </html>

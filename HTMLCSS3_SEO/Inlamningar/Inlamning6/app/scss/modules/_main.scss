@@ -1,7 +1,10 @@
+/* main */
+
 .artiklar{
     grid-area: main;
 
-
+/* Mobile */
+    
 @include respond-to('small') {
    
     @include gridTemplate(repeat(1, 1fr), auto, 1em);
@@ -15,6 +18,7 @@
             "box7";
     }
   
+  /* Tablet */
 
   @include respond-to('medium') {
     
@@ -27,7 +31,8 @@
     ;
     }
   
-
+  /* Desktop */
+  
   @include respond-to('large') {
 
         @include gridTemplate(repeat(5, 1fr), auto, 1em);
