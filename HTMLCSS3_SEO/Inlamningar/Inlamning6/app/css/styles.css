@@ -426,9 +426,9 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
+  grid-gap: 1em;
   grid-template-areas: "header" "main" "footer"; }
 
 header {
@@ -438,10 +438,8 @@ header {
   display: none; }
 
 nav > ul {
-  position: relative;
   display: flex;
-  justify-content: center;
-  width: 1200px;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0; }
   nav > ul .megamenu h4 {
@@ -489,7 +487,15 @@ nav > ul {
   label {
     display: none; }
   nav {
-    display: flex; } }
+    display: flex; }
+    nav > ul {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0; } }
 
 .artiklar {
   grid-area: main; }
