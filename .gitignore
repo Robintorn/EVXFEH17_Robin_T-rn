@@ -1,13 +1,5 @@
 .vscode
 *.vscode
 
-.DS_Store
-*.DS_Store
-
-.idea
-*.idea
-
+.gitignore
 node_modules
-dist
-
-traning
