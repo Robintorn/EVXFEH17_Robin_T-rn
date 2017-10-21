@@ -17,12 +17,3 @@ img{
     width: 100%;
     height: auto;
 }
-
-
-.grid{
-    @include gridTemplate(repeat(1, 1fr), auto, 1em);
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}

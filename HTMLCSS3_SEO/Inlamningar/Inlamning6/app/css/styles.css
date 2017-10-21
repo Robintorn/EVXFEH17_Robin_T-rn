@@ -464,6 +464,34 @@ img {
   grid-gap: 1em;
   grid-template-areas: "header" "main" "footer"; }
 
+/* main */
+.artiklar {
+  grid-area: main;
+  /* Mobile */
+  /* Tablet */
+  /* Desktop */ }
+  @media (min-width: 20em) {
+    .artiklar {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7"; } }
+  @media (min-width: 48em) {
+    .artiklar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      grid-template-areas: "box1 box2" "box3 box4" "box5 box6" "box7 ."; } }
+  @media (min-width: 62em) {
+    .artiklar {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      grid-template-areas: "box1 box2 box2 box3 box3" "box4 box2 box2 box5 box5" "box6 box6 box7 box5 box5"; } }
+
 /* Importerat alla partials */
 header {
   grid-area: header; }
@@ -541,50 +569,30 @@ nav {
       margin: 0 auto;
       padding: 0; } }
 
-/* main */
-.artiklar {
-  grid-area: main;
-  /* Mobile */
-  /* Tablet */
-  /* Desktop */ }
-  @media (min-width: 20em) {
-    .artiklar {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7"; } }
-  @media (min-width: 48em) {
-    .artiklar {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-areas: "box1 box2" "box3 box4" "box5 box6" "box7 ."; } }
-  @media (min-width: 62em) {
-    .artiklar {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-areas: "box1 box2 box2 box3 box3" "box4 box2 box2 box5 box5" "box6 box6 box7 box5 box5"; } }
-  .artiklar .kort {
-    border-top: 1px solid black;
-    line-height: 2.5em; }
-  .artiklar .kort1 {
-    grid-area: box1; }
-  .artiklar .kort2 {
-    grid-area: box2; }
-  .artiklar .kort3 {
-    grid-area: box3; }
-  .artiklar .kort4 {
-    grid-area: box4; }
-  .artiklar .kort5 {
-    grid-area: box5; }
-  .artiklar .kort6 {
-    grid-area: box6; }
-  .artiklar .kort7 {
-    grid-area: box7; }
+.kort {
+  border-top: 1px solid black;
+  line-height: 2.5em; }
+
+.kort1 {
+  grid-area: box1; }
+
+.kort2 {
+  grid-area: box2; }
+
+.kort3 {
+  grid-area: box3; }
+
+.kort4 {
+  grid-area: box4; }
+
+.kort5 {
+  grid-area: box5; }
+
+.kort6 {
+  grid-area: box6; }
+
+.kort7 {
+  grid-area: box7; }
 
 /* Footer */
 /* Nesting */

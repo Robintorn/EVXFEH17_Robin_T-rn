@@ -1,87 +1,42 @@
-/* main */
-
-.artiklar{
-    grid-area: main;
-
-/* Mobile */
-    
-@include respond-to('small') {
-   
-    @include gridTemplate(repeat(1, 1fr), auto, 1em);
-    grid-template-areas:
-            "box1"
-            "box2"
-            "box3"
-            "box4"
-            "box5"
-            "box6"
-            "box7";
-    }
-  
-  /* Tablet */
-
-  @include respond-to('medium') {
-    
-    @include gridTemplate(repeat(2, 1fr), auto, 1em);
-    grid-template-areas: 
-    "box1 box2"
-    "box3 box4"
-    "box5 box6"
-    "box7 ."
-    ;
-    }
-  
-  /* Desktop */
-  
-  @include respond-to('large') {
-
-        @include gridTemplate(repeat(5, 1fr), auto, 1em);
-        grid-template-areas: 
-        "box1 box2 box2 box3 box3"
-        "box4 box2 box2 box5 box5"
-        "box6 box6 box7 box5 box5";
-
+.kort{
+    border-top: 1px solid black;
+    line-height: 2.5em;
 }
 
-        .kort{
-            border-top: 1px solid black;
-            line-height: 2.5em;
-        }
-
-        .kort1{
-            grid-area: box1;
-          
-        }
+.kort1{
+    grid-area: box1;
+       
+}
+     
+.kort2{
+    grid-area: box2;
+     
+}
+     
+.kort3{
+    grid-area: box3;
+     
+}
+     
+.kort4{
+    grid-area: box4;
+       
+}
+     
+.kort5{
+    grid-area: box5;
+      
+}
+     
+.kort6{
+    grid-area: box6;
         
-        .kort2{
-            grid-area: box2;
-        
-        }
-        
-        .kort3{
-            grid-area: box3;
-        
-        }
-        
-        .kort4{
-            grid-area: box4;
-          
-        }
-        
-        .kort5{
-            grid-area: box5;
+}
          
-        }
-        
-        .kort6{
-            grid-area: box6;
-           
-        }
-            
-        .kort7{
-            grid-area: box7;
-        }
-    }
+.kort7{
+    grid-area: box7;
+}
+ 
 
 
 
