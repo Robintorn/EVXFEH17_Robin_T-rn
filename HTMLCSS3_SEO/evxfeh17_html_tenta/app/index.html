@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+ <!-- 
+    Här i head taggen skapas inställningarna för sidan.
+    Dessa inställningar syns inte direkt på sidan.
+  -->
+<head>
+  <!-- 
+    Meta taggen innehåller helt enkelt information om 
+    informationen på hemsidan. I detta fall så använder
+    vi attributet charset med värdet UTF-8 för att kunna
+    hjälpa webbläsaren och läsa in rätt teckenuppsättning.
+  -->
+  <meta charset="UTF-8">
+  <title>Inlamning6</title>
+  <!--
+     Här länkar jag till min externa css fil som gör
+     så att jag ska kunna styla mina element. 
+  -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- 
+     Den här meta taggen gör sidan mobilvänlig och skalbar
+     som är anpassad för mobilenheter.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Grid container -->
+  <div class="grid">
+    <!-- 
+       Header
+    -->
+    <header>
+        <!-- 
+           Checkbox för mobil-menyn 
+        -->      
+        <input type="checkbox" id="nav-toggle">
+        <!-- 
+           En div som hela menyn läggs i.
+           när man ska kunna dölja och visa
+           Mobil-menyn.
+        -->
+        <div id="wrapper">
+         <!-- 
+            Texten för mobil-menyn
+         -->
+         <label for="nav-toggle">&#9776 Mobil-menu</label>
+          <!-- 
+             Nav
+          -->
+        <nav>
+  <!-- 
+    Huvud-menyn
+  -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Produkter</a>
+      <!-- 
+        Mega-menyn
+      -->
+      <ul class="megamenu">
+        <ul>
+          <h4>Arbeitsspseicher</h4>
+          <li><a href="#">DDR</a></li>
+          <li><a href="#">DDR2</a></li>
+          <li><a href="#">DDR3</a></li>
+          <li><a href="#">DDR4</a></li>
+          <li><a href="#">Notebookspeicher</a></li>
+          <li><a href="#">Sonstiger Speicher</a></li>
+        </ul>
+        <ul>
+          <h4>Festplatten</h4>
+          <li><a href="#">Interne Festplatten</a></li>
+          <li><a href="#">Externe Festplatten</a></li>
+          <li><a href="#">SSD (Solid State Drive)</a></li>
+        </ul>
+        <ul>
+          <h4>Gehäuse und Netzteile</h4>
+          <li><a href="#">PC-Gehäuse</a></li>
+          <li><a href="#">Festplattengehäuse</a></li>
+          <li><a href="#">Netzteile</a></li>
+          <li><a href="#">Kühler</a></li>
+          <li><a href="#">Zubehör</a></li>
+        </ul>
+        <ul>
+          <h4>Grafikkarten</h4>
+          <li><a href="#">AMD</a></li>
+          <li><a href="#">Nvidia</a></li>
+          <li><a href="#">Sonstige</a></li>
+          <li><a href="#">Kühler</a></li>
+          <li><a href="#">Zubehör</a></li>
+        </ul>
+        <ul>
+          <h4>Laufwerke</h4>
+          <li><a href="#">Diskettenlaufwerke</a></li>
+          <li><a href="#">DVD</a></li>
+          <li><a href="#">Bluray</a></li>
+          <li><a href="#">Bandlaufwerke</a></li>
+        </ul>
+        <ul>
+          <h4>Prozessoren</h4>
+          <li><a href="#">AMD</a></li>
+          <li><a href="#">Intel</a></li>
+          <li><a href="#">Sonstige</a></li>
+          <li><a href="#">Kühler</a></li>
+          <li><a href="#">Zubehör</a></li>
+        </ul>
+        <ul>
+          <h4>Prozessoren</h4>
+          <li><a href="#">AMD</a></li>
+          <li><a href="#">Intel</a></li>
+          <li><a href="#">Sonstige</a></li>
+          <li><a href="#">Kühler</a></li>
+          <li><a href="#">Zubehör</a></li>
+        </ul>
+        <ul>
+          <h4>Netzwerk</h4>
+          <li><a href="#">Hubs und Switches</a></li>
+          <li><a href="#">Router</a></li>
+          <li><a href="#">Firewalls</a></li>
+          <li><a href="#">Powerline</a></li>
+          <li><a href="#">Kabel</a></li>
+        </ul>
+      </ul>
+    </li>
+    <li><a href="#">Über uns</a></li>
+    <li><a href="#">Kontakt</a></li>
+    <li><a href="#">Impressum</a></li>
+  </ul>
+</nav> <!-- End nav -->
+
+</div>
+
+</header>  <!-- End header -->
+
+<!-- Start main(class: .artiklar) -->
+<main class="artiklar">
+  <!-- 
+     Sett till så att alla list-items har en gemensam klass.
+     Men har också satt en specifik klass för det första
+     list-itemet och den 8:e. 
+                
+     Detta är för att det kommer
+     komma till användning senare när jag ska sätta unika
+     regler för dessa två.
+  -->
+  <article class="kort kort1">
+    <h2>Tjena</h2>
+  <img src="http://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg">
+  </article>
+  
+   <article class="kort kort2">
+    <h2>Tjena</h2>
+  <img src="https://i.pinimg.com/736x/6e/d6/1e/6ed61ee28ac6c5d0a547a04bc4a22b37--senior-pictures-balloons-senior-pics.jpg">
+  </article>
+
+   <article class="kort kort3">
+    <h2>Tjena</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCDdvoIsXn6NXcJM0MclnCp1kSVTo2CNs0kWDcdRIBWyOU4qxNg">
+  </article>
+
+   <article class="kort kort4">
+    <h2>Tjena</h2>
+   <img src="https://twistedsifter.files.wordpress.com/2017/03/point-reyes-shipwreck.jpg">
+  </article>
+
+   <article class="kort kort5">
+    <h2>Tjena</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ2LyHM9eue170NHW9Ng7YpzMwW1kCh4g4uxX06wJYp4IyRQILSg">
+  </article>
+
+   <article class="kort kort6">
+    <h2>Tjena</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9E9XsirquFI4HK3ip7B8zlVGpXsWkGGQYbbdn9ANClDjEIkDS">
+  </article>
+
+   <article class="kort kort7">
+    <h2>Tjena</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ2LyHM9eue170NHW9Ng7YpzMwW1kCh4g4uxX06wJYp4IyRQILSg">
+  </article>
+
+</main> <!-- End main -->
+
+<!-- Start footer -->
+<footer>
+    <div class="footermain">
+        <h2>Footer</h2>
+    </div>
+    <div class="footer1">
+      <p>Box1</p>
+    </div>
+    <div class="footer2">
+      <p>Box2</p>
+    </div>
+    <div class="footer3">
+      <p>Box3</p>
+    </div>
+</footer> <!-- End footer -->
+</div> <!-- End gridcontainer -->
+</body>
+
+</html>

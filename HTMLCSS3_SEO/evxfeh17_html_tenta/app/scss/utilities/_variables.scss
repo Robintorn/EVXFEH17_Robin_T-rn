@@ -1,0 +1,19 @@
+/* Variabler angående färger */
+
+$primary-color: #D5DEF5;
+
+$secondary-color: #8594E4;
+
+$third-color: #6643B5;
+
+$fourth-color: #430F58;
+
+$black: black;
+
+/* Sass map som har fördefinerat värden för attributen */
+
+$breakpoints: (
+    'small':  ( min-width:  20.000em ),
+    'medium': ( min-width:  48.000em ),
+    'large':  ( min-width: 62.000em )
+) !default;
