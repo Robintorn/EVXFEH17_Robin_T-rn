@@ -1,0 +1,31 @@
+.hero{
+    grid-area: hero;
+    background-image: url("../../images/scotland.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 250px;
+    @extend %textstandard;
+
+    .hero-title{
+        color: map-get($site-colors, secondary);
+        font-size: $font-size-title;
+    }
+
+    .sub-title{
+        color: map-get($site-colors, secondary);
+        font-size: $font-size-sub;
+    }
+
+    @include respond-to('large') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;     
+        width: auto;
+        min-height: none;
+        
+    
+        } 
+    
+}

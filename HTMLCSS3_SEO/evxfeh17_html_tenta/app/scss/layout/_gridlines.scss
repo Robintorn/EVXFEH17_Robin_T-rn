@@ -1,0 +1,67 @@
+.portfolio{
+
+/* Mobile */
+
+@include respond-to('small'){
+
+    min-height: 100vh;
+    margin-bottom: 1em;
+}
+
+/* Desktop */
+
+@include respond-to('large'){
+
+
+    display: grid;
+    @include gridTemplate(repeat(5, 1fr), repeat(8, 1fr), 20px);
+
+    
+        .small{
+            grid-row: span 2;
+            grid-column: span 2;
+            background: map-get($site-colors, primary);
+        }
+    
+        .medium{
+            grid-row: span 3;
+            grid-column: span 3;
+            background: map-get($site-colors, primary);
+        }
+    
+        .large{
+            grid-row: span 4;
+            grid-column: span 4;
+
+            
+        .with-image::before{
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            transition: 300ms;
+
+            &:hover{
+                opacity: 0.2;
+            }
+        }
+    
+        .tall{
+            grid-row: span 4;
+            grid-column: span 3;
+            background: map-get($site-colors, primary);
+        }
+    
+        .wide{
+            grid-row: span 3;
+            grid-column: span 4;
+             background: map-get($site-colors, primary);
+        }
+
+        }
+    }
+}
+

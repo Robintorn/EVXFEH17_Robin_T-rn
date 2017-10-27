@@ -457,40 +457,41 @@ img {
   width: 100%;
   height: auto; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 1em;
-  grid-template-areas: "header" "main" "footer"; }
+@supports (grid-area: auto) {
+  /* master-grid */
+  .grid {
+    display: grid;
+    grid-template: "header" auto "main" "footer" / 1fr;
+    grid-gap: 1em; } }
 
-/* main */
-.artiklar {
-  grid-area: main;
-  /* Mobile */
-  /* Tablet */
-  /* Desktop */ }
-  @media (min-width: 20em) {
-    .artiklar {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7"; } }
-  @media (min-width: 48em) {
-    .artiklar {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-areas: "box1 box2" "box3 box4" "box5 box6" "box7 ."; } }
-  @media (min-width: 62em) {
-    .artiklar {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-areas: "box1 box2 box2 box3 box3" "box4 box2 box2 box5 box5" "box6 box6 box7 box5 box5"; } }
+@supports (grid-area: auto) {
+  /* main */
+  .artiklar {
+    grid-area: main;
+    /* Mobile */
+    /* Tablet */
+    /* Desktop */ }
+    @media (min-width: 20em) {
+      .artiklar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7"; } }
+    @media (min-width: 48em) {
+      .artiklar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas: "box1 box2" "box3 box4" "box5 box6" "box7 ."; } }
+    @media (min-width: 62em) {
+      .artiklar {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas: "box1 box2 box2 box3 box3" "box4 box2 box2 box5 box5" "box6 box6 box7 box5 box5"; } } }
 
 /* Importerat alla partials */
 header {

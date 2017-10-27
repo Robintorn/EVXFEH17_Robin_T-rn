@@ -1,9 +1,11 @@
+@supports (grid-area: auto){
+
 /* main */
 
 .artiklar{
     grid-area: main;
 
-/* Mobie */
+/* Mobile */
     
 @include respond-to('small') {
    
@@ -41,5 +43,6 @@
         "box4 box2 box2 box5 box5"
         "box6 box6 box7 box5 box5";
 
+}
 }
 }

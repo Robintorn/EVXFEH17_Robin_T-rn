@@ -1,0 +1,19 @@
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-template-areas: "image title" "image content";
+
+    .card-image{
+        grid-area: image;
+    }
+
+    .card-title{
+        grid-area: title;
+    }
+
+    .card-content{
+        grid-area: content;
+    }
+
+}
+

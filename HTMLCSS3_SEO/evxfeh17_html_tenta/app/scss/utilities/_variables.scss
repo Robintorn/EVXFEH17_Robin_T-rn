@@ -1,14 +1,15 @@
-/* Variabler angående färger */
+/* Color map */
 
-$primary-color: #D5DEF5;
+$site-colors:(
+    primary: blue,
+    secondary: #FAFAFA
+    );
 
-$secondary-color: #8594E4;
+$font-size-title: 50px;
 
-$third-color: #6643B5;
+$font-size-sub: 45px;
 
-$fourth-color: #430F58;
-
-$black: black;
+$font-size-content: 20px;
 
 /* Sass map som har fördefinerat värden för attributen */
 

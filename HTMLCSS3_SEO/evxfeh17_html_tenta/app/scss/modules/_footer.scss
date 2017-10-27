@@ -1,0 +1,9 @@
+footer{
+    grid-area: footer;
+    background: red;
+
+    .footer-title{
+        @extend %textstandard;
+        
+    }
+}
