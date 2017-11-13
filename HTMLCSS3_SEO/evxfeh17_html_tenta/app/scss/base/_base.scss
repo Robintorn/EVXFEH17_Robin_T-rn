@@ -1,7 +1,7 @@
 /* Base css */
 
 *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: $font;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -11,6 +11,5 @@
 
 
 img{
-    width: 100%;
-    height: auto;
+    @extend %responsive;
 }

@@ -38,28 +38,3 @@
           + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
   }
-
-
-  
-  /* Mixins för mv-uppgiften*/
-
-  @mixin circle($width, $color) {
-    width: $width;
-    height: $width;
-    background: $color;
-    -webkit-border-radius: $width/2;
-       -moz-border-radius: $width/2;
-            border-radius: $width/2;
-  }
-
-  @mixin gridTemplate($background, $color, $padding ) {
-    .red-circle{
-    background-color: $background;
-    &:hover{
-      color: $color;
-    }
-
-    padding: $padding;
-    
-    }
-  }
