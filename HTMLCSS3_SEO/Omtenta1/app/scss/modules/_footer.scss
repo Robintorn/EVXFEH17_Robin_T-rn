@@ -1,0 +1,15 @@
+.footer {
+    background-color: map-get($site-colors, seven);
+    padding: 20px;
+    h3 {
+      margin:0.5em;
+      border-bottom:1px solid black;
+    }
+
+    ul li{
+        margin: 0.5em;
+    }
+  }
+
+  
+  

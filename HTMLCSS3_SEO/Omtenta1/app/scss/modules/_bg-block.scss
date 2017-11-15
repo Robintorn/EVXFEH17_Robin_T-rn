@@ -8,12 +8,12 @@
         padding: 1em;
 
         .header{
-            font-size: $font-size1;
+            font-size: $font-size10;
             border-bottom: 1px solid black;
         }
     
         .caption{
-            font-size: $font-size3;
+            font-size: $font-size10;
 
             .special{
                 color: map-get($site-colors, secondary);

@@ -6,7 +6,8 @@ $site-colors:(
     third: red,
     fourth: yellow,
     five: green,
-    six: black
+    six: black,
+    seven: #eee
     );
 
 $font: Georgia, 'Times New Roman', Times, serif;
@@ -14,6 +15,10 @@ $font: Georgia, 'Times New Roman', Times, serif;
 $font-size1: 20px;
 
 $font-size2: 30px;
+
+$font-size10: 6.2em;
+
+$font-size11: 2.8em;
 
 $font-size3: 40px;
 

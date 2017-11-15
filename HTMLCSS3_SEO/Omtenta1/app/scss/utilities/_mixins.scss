@@ -38,3 +38,8 @@
           + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
   }
+
+
+  @mixin gradient($angle, $primary, $secondary) {
+    background: linear-gradient($angle, $primary, $secondary); // angle, to top left / 45deg
+  }
