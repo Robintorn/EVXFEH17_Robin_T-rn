@@ -1,0 +1,29 @@
+/* Color map */
+
+$site-colors:(
+    primary: blue,
+    secondary: #FAFAFA,
+    third: red,
+    fourth: yellow,
+    five: green,
+    six: black
+    );
+
+$font: Georgia, 'Times New Roman', Times, serif;
+
+$font-size1: 20px;
+
+$font-size2: 30px;
+
+$font-size3: 40px;
+
+$font-size4: 50px;
+
+/* Sass map som har fördefinerat värden för attributen */
+
+$breakpoints: (
+    "small": (min-width: 20em),
+    'medium':  ( min-width:  750px ),
+    'large': ( min-width:  840px ),
+    'wide':  ( min-width: 1600px )
+) !default;

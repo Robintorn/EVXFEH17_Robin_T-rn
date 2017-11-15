@@ -1,0 +1,35 @@
+.small-ad{margin-top: 10px;
+display: flex;
+flex-direction: column;
+text-align: center;
+border: 1px solid black;
+
+
+.ad{
+    padding: 1em;
+
+}
+}
+
+@include respond-to("small"){
+    .small-ad{
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+    }
+}
+
+@include respond-to("large"){
+.small-ad{
+    grid-column: 1 / 3;
+    
+}
+}
+
+
+@include respond-to("wide"){
+    .small-ad{
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+        
+    }
+    }

@@ -1,0 +1,14 @@
+header{
+    background-color: map-get($site-colors, primary);
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid black;
+    grid-column: 1 / 11;
+
+    .title{
+        text-transform: uppercase;
+        color: map-get($site-colors, secondary);
+        font-size: 40px;
+    }
+}
+

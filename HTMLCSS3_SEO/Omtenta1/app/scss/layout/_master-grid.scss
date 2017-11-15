@@ -1,0 +1,17 @@
+@include respond-to("small"){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        background-color: map-get($site-colors, primary);
+    }
+}
+
+@include respond-to("large"){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: auto;
+        background-color: map-get($site-colors, primary);
+    }
+}
