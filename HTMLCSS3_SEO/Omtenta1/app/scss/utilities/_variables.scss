@@ -22,8 +22,9 @@ $font-size4: 50px;
 /* Sass map som har fördefinerat värden för attributen */
 
 $breakpoints: (
-    "small": (min-width: 20em),
-    'medium':  ( min-width:  750px ),
-    'large': ( min-width:  840px ),
-    'wide':  ( min-width: 1600px )
+    'small':  ( min-width:  100px ),
+    'medium': ( min-width:  750px ),
+    'large':  ( min-width: 840px ),
+    'desktop':  ( min-width: 1000px ),
+    'wide': (min-width: 1280px)
 ) !default;

@@ -7,21 +7,15 @@
 
 @include respond-to("small"){
 .article-body{
-    grid-column: 3 / 6;
-    grid-row: 2 / 3;
     align-self: center;
     padding-left: 20px;
 }
 
 
-@include respond-to("large"){
-    grid-column: 8 / 11;
-    grid-row: 2 / 3;
+@include respond-to("medium"){
 }
 
-@include respond-to("wide"){
-    grid-column: 9 / 11;
-    grid-row: 2 / 3;
+@include respond-to("desktop"){
     display: flex;
     align-self: flex-start;
 }
