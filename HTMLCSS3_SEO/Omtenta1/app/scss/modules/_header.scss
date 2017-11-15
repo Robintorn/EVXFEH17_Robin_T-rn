@@ -1,3 +1,5 @@
+/* Header styling */
+
 header{
     @include gradient(30deg, red, orange);
     display: flex;

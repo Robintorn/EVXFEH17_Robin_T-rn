@@ -1,3 +1,7 @@
+/* bg-block styling */
+
+/* Small */
+
 @include respond-to("small"){
 .bg-block{
     background-image: url(../../images/rockies.jpg);
@@ -8,12 +12,12 @@
         padding: 1em;
 
         .header{
-            font-size: $font-size10;
+            font-size: $font-size3;
             border-bottom: 1px solid black;
         }
     
         .caption{
-            font-size: $font-size10;
+            font-size: $font-size3;
 
             .special{
                 color: map-get($site-colors, secondary);

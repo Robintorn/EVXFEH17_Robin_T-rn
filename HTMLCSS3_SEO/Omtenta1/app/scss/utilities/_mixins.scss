@@ -41,5 +41,5 @@
 
 
   @mixin gradient($angle, $primary, $secondary) {
-    background: linear-gradient($angle, $primary, $secondary); // angle, to top left / 45deg
+    background: linear-gradient($angle, $primary, $secondary); /* Top to left */
   }

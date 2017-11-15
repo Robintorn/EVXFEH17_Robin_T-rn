@@ -1,3 +1,7 @@
+/* Article-header styling */
+
+/* Small */
+
 @include respond-to("small"){
 .article-header{
     display: flex;
@@ -11,6 +15,7 @@
 }
 }
 
+/* Medium */
 @include respond-to("medium"){
     .article-header{
     align-self: end;
@@ -18,6 +23,7 @@
 }
 }
 
+/* Large */
 @include respond-to("large"){
     .article-header{
         align-self: end;
