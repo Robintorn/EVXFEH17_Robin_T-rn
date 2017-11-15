@@ -1,5 +1,3 @@
-evxfeh17_html_tenta
-
 Gulp basic setup
 
 Basic setup for gulp with few packages.
