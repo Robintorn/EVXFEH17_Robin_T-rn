@@ -1,0 +1,56 @@
+/*Styling header*/
+
+/*General Styling*/
+header {
+  grid-area: header;
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-repeat: none;
+
+  
+
+
+/*Navigation xsmall*/
+@include respond-to("xsmall") { /*using my own breakingpoint variable from breakingpoints map*/
+
+  .flex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 8em;
+
+  .rofajo{
+    color: white;
+    font-size: 30px;
+  }
+
+  .rofajo-img{
+    max-width: 60px;
+}
+}
+
+}
+
+/*Navigation Desktop & Tablet*/
+@include respond-to("large") { /*using breakpoint variables from breakpoints map*/
+.toggle {
+  display: none; /*hides bars icon on desktop & tablet*/
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 8em;
+
+  .rofajo{
+    color: white;
+    font-size: 30px;
+  }
+
+  .rofajo-img{
+    max-width: 60px;
+}
+}
+}
+}
