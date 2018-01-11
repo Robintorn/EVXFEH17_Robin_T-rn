@@ -1,0 +1,50 @@
+.saldo{
+    background: #ffffff;
+
+        p{
+            font-size: 20px;
+            padding: 1em;
+            color: #95989A;
+        }
+    }
+
+.info{
+    text-align: center;
+
+    p{
+        font-size: 20px;
+        font-weight: 700;
+        color: #2C68AD;
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    
+    .borders{
+        padding: 1em;
+        border-radius: 50%;
+    }
+
+    .border1{
+        color: #F9D64D;
+        background: #2C68AD;
+    }
+
+    .border2{
+        color: #DF1724;
+        background: #F4B8BA;
+    }
+
+    .border3{
+        color: #ffffff;
+        background: #14C700;
+    }
+
+    .border4{
+        color: #2C68AD;
+        background: #F9D64D;
+    }
+}
+

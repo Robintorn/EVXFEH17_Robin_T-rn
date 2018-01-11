@@ -5,3 +5,6 @@ node_modules
 *.css.map
 dist/**/*
 sassdoc
+settings.json
+.vscode
+package-lock.json
