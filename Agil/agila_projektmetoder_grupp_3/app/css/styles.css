@@ -409,11 +409,12 @@ img {
   width: 100%; }
 
 .saldo {
-  background: #ffffff; }
+  background: #D0FFFD;
+  margin: 1em; }
   .saldo p {
     font-size: 20px;
     padding: 1em;
-    color: #95989A; }
+    color: #2C68AD; }
 
 .info {
   text-align: center; }
