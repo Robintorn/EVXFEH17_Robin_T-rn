@@ -1,26 +1,12 @@
-@import url(https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'merriweather', Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none; }
-
-body {
-  background: #B1FF6D; }
-
-h2, h3, h4, h5, h6 {
-  margin: 0.67em 0; }
-
 /*-----------Normalize file-----------*/
 /*
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url(https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 html {
   line-height: 1.15;
   /* 1 */
@@ -404,6 +390,21 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'merriweather', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  background: #B1FF6D; }
+
+h2, h3, h4, h5, h6 {
+  margin: 0.67em 0; }
+
+/* Color map */
 img {
   height: auto;
   width: 100%; }
@@ -433,17 +434,21 @@ img {
     padding: 1em;
     border-radius: 50%; }
   .buttons .border1 {
-    color: #F9D64D;
     background: #2C68AD; }
+    .buttons .border1 a {
+      color: #F9D64D; }
   .buttons .border2 {
-    color: #DF1724;
     background: #F4B8BA; }
+    .buttons .border2 a {
+      color: #DF1724; }
   .buttons .border3 {
-    color: #ffffff;
     background: #14C700; }
+    .buttons .border3 a {
+      color: #ffffff; }
   .buttons .border4 {
-    color: #2C68AD;
     background: #F9D64D; }
+    .buttons .border4 a {
+      color: #2C68AD; }
 
 @supports (grid-area: auto) {
   @media (min-width: 376px) {

@@ -8,7 +8,7 @@
     justify-content: center;
     
     .art{
-        color: map-get($site-colors, six);
+        color: map-get($colors, bakgrund);
         font-size:4.2vw;
         text-transform: uppercase;
     }

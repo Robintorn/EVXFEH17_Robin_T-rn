@@ -20,7 +20,7 @@
             font-size: $font-size3;
 
             .special{
-                color: map-get($site-colors, secondary);
+                color: map-get($colors, bakgrund);
             }
         }
     }

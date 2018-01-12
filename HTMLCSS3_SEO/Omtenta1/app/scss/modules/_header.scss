@@ -8,7 +8,7 @@ header{
 
     .title{
         text-transform: uppercase;
-        color: map-get($site-colors, secondary);
+        color: map-get($colors, bakgrund);
         font-size:7.1vw;
     }
 }

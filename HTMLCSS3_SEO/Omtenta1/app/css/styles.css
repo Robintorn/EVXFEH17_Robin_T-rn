@@ -617,7 +617,7 @@ header {
   border-bottom: 10px solid black; }
   header .title {
     text-transform: uppercase;
-    color: #FAFAFA;
+    color: #B1FF6D;
     font-size: 7.1vw; }
 
 /* Small-ad styling */
@@ -637,7 +637,7 @@ header {
     display: flex;
     justify-content: center; }
     .article-header .art {
-      color: black;
+      color: #B1FF6D;
       font-size: 4.2vw;
       text-transform: uppercase; } }
 
@@ -684,7 +684,7 @@ header {
       .bg-block .kom .caption {
         font-size: 40px; }
         .bg-block .kom .caption .special {
-          color: #FAFAFA; } }
+          color: #B1FF6D; } }
 
 /* Styling community */
 .heading {
@@ -692,7 +692,6 @@ header {
 
 /* Footer styling */
 .footer {
-  background-color: #eee;
   padding: 20px; }
   .footer h3 {
     margin: 0.5em;

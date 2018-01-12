@@ -9,7 +9,7 @@
         p{
             font-size: 20px;
             padding: 1em;
-            color: #2C68AD;;
+            color: #2C68AD;
         }
     }
 
@@ -33,23 +33,35 @@
     }
 
     .border1{
-        color: #F9D64D;
         background: #2C68AD;
+
+        a{
+            color: #F9D64D;
+        }
     }
 
     .border2{
-        color: #DF1724;
         background: #F4B8BA;
+
+        a{
+            color: #DF1724
+        }
     }
 
     .border3{
-        color: #ffffff;
         background: #14C700;
+
+        a{
+            color: #ffffff;
+        }
     }
 
     .border4{
-        color: #2C68AD;
         background: #F9D64D;
+
+        a{
+            color: #2C68AD;
+        }
     }
 }
 
